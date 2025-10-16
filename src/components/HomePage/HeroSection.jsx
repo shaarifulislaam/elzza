@@ -53,7 +53,7 @@ const HeroSection = () => {
           <ul className="services-list">
             {listItems.map((list, i) => (
               <li key={i} className="list-item">
-                <span className="icon">{/* <SvgIcon /> */}</span>
+                <span className="icon"></span>
                 <div className="lbl">{list}</div>
               </li>
             ))}
