@@ -2,7 +2,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import TopBar from "./Topbar";
+import TopBar from "./TopBar";
 
 export default function LayoutWrapper({ children }) {
   return (
