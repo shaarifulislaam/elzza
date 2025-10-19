@@ -16,6 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
       <body className={roboto?.variable} suppressHydrationWarning>
         <LayoutWrapper>{children}</LayoutWrapper>
         <Script
