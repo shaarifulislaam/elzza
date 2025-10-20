@@ -16,7 +16,7 @@ const WhyChoose = () => {
           <div className="why-choose-block">
             <div className="img-container">
               <img
-                src="/assets/images/HomePage/whyChoose/why.png"
+                src="/assets/images/Homepage/whyChoose/why.png"
                 alt="Why Choose"
               />
             </div>
@@ -56,24 +56,24 @@ export const serviceData = [
     id: 1,
     title: "Custom Design & Planning",
     desc: "Every Elzza product is tailored to fit your home’s unique structure.",
-    image: "/assets/images/HomePage/whyChoose/1.svg",
+    image: "/assets/images/Homepage/whyChoose/1.svg",
   },
   {
     id: 2,
     title: "Professional Installation",
     desc: "Our skilled team ensures a seamless installation process — fast, clean, and detail-focused.",
-    image: "/assets/images/HomePage/whyChoose/2.svg",
+    image: "/assets/images/Homepage/whyChoose/2.svg",
   },
   {
     id: 3,
     title: "Quality Assurance",
     desc: "Each window and door goes through strict quality control to ensure durability and performance.",
-    image: "/assets/images/HomePage/whyChoose/3.svg",
+    image: "/assets/images/Homepage/whyChoose/3.svg",
   },
   {
     id: 4,
     title: "Aftercare & Support",
     desc: "We offer ongoing support, maintenance tips, and product warranties for peace of mind.",
-    image: "/assets/images/HomePage/whyChoose/4.svg",
+    image: "/assets/images/Homepage/whyChoose/4.svg",
   },
 ];

@@ -7,6 +7,8 @@ import ServicesSection from "./ServicesSection";
 import GallerySection from "./GallerySection";
 import ReviewSection from "./ReviewSection";
 import WhyChoose from "./WhyChoose";
+import VisionSection from "./VisionSection";
+import Blogs from "./Blogs";
 
 const HomePage = () => {
   return (
@@ -18,7 +20,9 @@ const HomePage = () => {
       <WhyChoose />
       <ProjectsSection />
       <GallerySection />
+      <VisionSection />
       <ReviewSection />
+      <Blogs />
     </>
   );
 };

@@ -1,0 +1,192 @@
+import React from "react";
+import CommonTitle from "../commonElement/CommonTitle";
+import Link from "next/link";
+
+const VisionSection = () => {
+  return (
+    <section className="vision-section">
+      <div className="el-container">
+        <CommonTitle
+          subTitle="Our Versions"
+          title="Explore"
+          highLight="Explore Our Full Range "
+          title2="of Modern Window and Door Design"
+        />
+        <div className="product-grid">
+          {productCards.map((card) => (
+            <article
+              className="product-card"
+              key={card.id}
+              aria-labelledby={`${card.id}-title`}
+            >
+              <div className="img-container">
+                <img src={card.image} alt={card.title} loading="lazy" />
+              </div>
+
+              <header className="card-head">
+                <h3 className="card-title">{card.title}</h3>
+                <p className="card-sub">{card.subtitle}</p>
+              </header>
+
+              <div className="card-docs">
+                {card.docs.map((d) => (
+                  <div className="doc-row" key={d.id}>
+                    <Link
+                      className="doc-link"
+                      href={d.href}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={d.label}
+                      aria-label={d.label}
+                    >
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="19"
+                          height="18"
+                          viewBox="0 0 19 18"
+                          fill="none"
+                        >
+                          <path
+                            d="M15.4662 17V12.9322H17.5001M16.8221 14.9661H15.4662M6.65263 17V12.9322M6.65263 12.9322H8.00856C8.57023 12.9322 9.02551 13.3875 9.02551 13.9491C9.02551 14.5108 8.57023 14.9661 8.00856 14.9661H6.65263V12.9322ZM7.60178 6.42382V10.4916M7.60178 10.4916L6.24585 9.13565M7.60178 10.4916L8.95772 9.13565M13.7035 10.4916V5.06787M12.0764 17H11.0594V12.9322H12.0764C12.8252 12.9322 13.4323 13.5393 13.4323 14.2881V15.644C13.4323 16.3929 12.8252 17 12.0764 17Z"
+                            stroke="#1857D8"
+                            strokeWidth="1.5"
+                            strokeMiterlimit="10"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M9.6356 1H2.85593C2.10709 1 1.5 1.60708 1.5 2.35591V15.6439C1.5 16.3927 2.10709 16.9998 2.85593 16.9998H4.21187M9.6356 1V3.71183C9.6356 4.46067 10.2427 5.06774 10.9915 5.06774H13.7034L9.6356 1Z"
+                            stroke="#1857D8"
+                            strokeWidth="1.5"
+                            strokeMiterlimit="10"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span className="doc-label">{d.label}</span>
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default VisionSection;
+export const productCards = [
+  {
+    id: "classic-6",
+    title: "Elzza Classic 6°",
+    subtitle:
+      "Timeless design with a refined finish that mirrors the natural warmth of wood.",
+    image: "/assets/images/Homepage/vision/1.png",
+    docs: [
+      {
+        id: "brochure",
+        label: "Download Brochure — Classic 6°",
+        href: "/assets/docs/classic-6-brochure.pdf",
+        type: "static",
+      },
+      {
+        id: "profile",
+        label: "Elzza Window Profile Guide",
+        href: "/assets/docs/classic-6-profile.pdf",
+        type: "static",
+      },
+      {
+        id: "care",
+        label: "Care Instructions",
+        href: "/assets/docs/classic-6-care.pdf",
+        type: "static",
+      },
+    ],
+  },
+  {
+    id: "modern-15",
+    title: "Elzza Modern 15°",
+    subtitle:
+      "Sleek angled design that brings depth and sophistication to any façade.",
+    image: "/assets/images/Homepage/vision/1.png",
+    docs: [
+      {
+        id: "brochure",
+        label: "Download Brochure — Modern 15°",
+        href: "/assets/docs/modern-15-brochure.pdf",
+        type: "static",
+      },
+      {
+        id: "install",
+        label: "Installation Guide",
+        href: "/assets/images/Homepage/vision/1.png",
+        type: "static",
+      },
+      {
+        id: "maintenance",
+        label: "Maintenance Tips",
+        href: "/assets/docs/modern-15-maintenance.pdf",
+        type: "static",
+      },
+    ],
+  },
+  {
+    id: "city-line",
+    title: "Elzza City Line",
+    subtitle:
+      "Straight contours with a historic charm crafted for urban homes and restorations.",
+    image: "/assets/images/Homepage/vision/1.png",
+    docs: [
+      {
+        id: "brochure",
+        label: "Download Brochure — City Line",
+        href: "/assets/docs/city-line-brochure.pdf",
+        type: "static",
+      },
+      {
+        id: "profile",
+        label: "Profile System Details",
+        href: "/assets/docs/city-line-profile.pdf",
+        type: "static",
+      },
+      {
+        id: "care",
+        label: "Care Instructions",
+        href: "/assets/docs/city-line-care.pdf",
+        type: "static",
+      },
+    ],
+  },
+  {
+    id: "flat",
+    title: "Elzza Flat",
+    subtitle:
+      "A streamlined, ultra-modern design emphasizing clean lines and contemporary aesthetics.",
+    image: "/assets/images/Homepage/vision/1.png",
+    docs: [
+      {
+        id: "brochure",
+        label: "Download Brochure — Flat Series",
+        href: "/assets/docs/flat-brochure.pdf",
+        type: "static",
+      },
+      {
+        id: "install",
+        label: "Installation Manual",
+        href: "/assets/docs/flat-install.pdf",
+        type: "static",
+      },
+      {
+        id: "care",
+        label: "Care Instructions",
+        href: "/assets/docs/flat-care.pdf",
+        type: "static",
+      },
+    ],
+  },
+];
