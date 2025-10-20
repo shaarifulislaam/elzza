@@ -17,7 +17,7 @@ const ReviewSection = () => {
   const [isEnd, setIsEnd] = useState(false);
   return (
     <search className="review-section">
-      <div className="el-review-container">
+      <div className="el-container">
         <CommonTitle
           subTitle="Our Customer Reviews"
           title="What Our "
