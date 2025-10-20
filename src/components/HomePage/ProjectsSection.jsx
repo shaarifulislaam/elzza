@@ -53,114 +53,31 @@ const ProjectsSection = () => {
               },
             }}
           >
-            <SwiperSlide>
-              <div className="projects-block-container">
-                <div className="img-block">
-                  <div className="img-container">
-                    <img
-                      src="/assets/images/Homepage/projects/image1.png"
-                      alt=""
-                    />
+            {projectData.map((project) => (
+              <SwiperSlide key={project.id}>
+                <div className="projects-block-container">
+                  <div className="img-block">
+                    {project.images.map((img, index) => (
+                      <div key={index} className="img-container">
+                        <img src={img} alt={project.title} />
+                        <div className="cta-label">
+                          {index === 0 ? (
+                            <span className="before">Before</span>
+                          ) : (
+                            <span className="after">After</span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <div className="img-container">
-                    <img
-                      src="/assets/images/Homepage/projects/image2.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="text-block">
-                  <div className="text-title">
-                    Black Windows and Doors Elevate Stunning Lakefront Home
-                  </div>
-                  <div className="text-desc">
-                    Elegant wood designs bring warmth and sophistication to a
-                    modern Murfreesboro renovation.
+
+                  <div className="text-block">
+                    <div className="text-title">{project.title}</div>
+                    <div className="text-desc">{project.desc}</div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="projects-block-container">
-                <div className="img-block">
-                  <div className="img-container">
-                    <img
-                      src="/assets/images/Homepage/projects/image1.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="img-container">
-                    <img
-                      src="/assets/images/Homepage/projects/image2.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="text-block">
-                  <div className="text-title">
-                    Black Windows and Doors Elevate Stunning Lakefront Home
-                  </div>
-                  <div className="text-desc">
-                    Elegant wood designs bring warmth and sophistication to a
-                    modern Murfreesboro renovation.
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="projects-block-container">
-                <div className="img-block">
-                  <div className="img-container">
-                    <img
-                      src="/assets/images/Homepage/projects/image1.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="img-container">
-                    <img
-                      src="/assets/images/Homepage/projects/image2.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="text-block">
-                  <div className="text-title">
-                    Black Windows and Doors Elevate Stunning Lakefront Home
-                  </div>
-                  <div className="text-desc">
-                    Elegant wood designs bring warmth and sophistication to a
-                    modern Murfreesboro renovation.
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="projects-block-container">
-                <div className="img-block">
-                  <div className="img-container">
-                    <img
-                      src="/assets/images/Homepage/projects/image1.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="img-container">
-                    <img
-                      src="/assets/images/Homepage/projects/image2.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="text-block">
-                  <div className="text-title">
-                    Black Windows and Doors Elevate Stunning Lakefront Home
-                  </div>
-                  <div className="text-desc">
-                    Elegant wood designs bring warmth and sophistication to a
-                    modern Murfreesboro renovation.
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
 
           {/* Navigation Buttons */}
@@ -237,3 +154,42 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+// data/projectData.js
+export const projectData = [
+  {
+    id: 1,
+    images: [
+      "/assets/images/Homepage/projects/image1.png",
+      "/assets/images/Homepage/projects/image2.png",
+    ],
+    title: "Black Windows and Doors Elevate Stunning Lakefront Home",
+    desc: "Elegant wood designs bring warmth and sophistication to a modern Murfreesboro renovation.",
+  },
+  {
+    id: 2,
+    images: [
+      "/assets/images/Homepage/projects/image1.png",
+      "/assets/images/Homepage/projects/image2.png",
+    ],
+    title: "Modern Aluminum Frames Transform Urban Apartment Design",
+    desc: "Sleek aluminum frames redefine the aesthetic of contemporary living spaces.",
+  },
+  {
+    id: 3,
+    images: [
+      "/assets/images/Homepage/projects/image1.png",
+      "/assets/images/Homepage/projects/image2.png",
+    ],
+    title: "Classic Wood Touches Add Charm to Countryside Cottage",
+    desc: "Traditional window frames balance elegance and functionality for timeless appeal.",
+  },
+  {
+    id: 4,
+    images: [
+      "/assets/images/Homepage/projects/image1.png",
+      "/assets/images/Homepage/projects/image2.png",
+    ],
+    title: "Minimalist Black Frames Bring Elegance to Beachfront Villa",
+    desc: "Expansive glass and minimal frames capture natural light and ocean views.",
+  },
+];

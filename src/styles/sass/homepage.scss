@@ -281,6 +281,7 @@ Projects Section
 .projects-section {
   background: var(--Foundation-Blue-blue-50, #e6e7ed);
   padding-block: 60px;
+  margin-block: 100px;
 
   .projects-container {
     position: relative;
@@ -297,13 +298,48 @@ Projects Section
 
         .img-container {
           flex: 1;
-
+          position: relative;
           img {
             width: 100%;
             height: 100%;
             border-radius: 8px;
             object-fit: cover;
             object-position: center;
+          }
+          .cta-label {
+            position: absolute;
+            left: 12px;
+            top: 18px;
+            border-radius: 999px;
+
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+            text-align: center;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+
+            span {
+              display: inline-block;
+              padding: 8px 24px;
+              border-radius: 999px;
+            }
+
+            .before {
+              background: #e8eefb;
+              color: #1857d8;
+              border: 1px solid #1857d8;
+            }
+
+            .after {
+              background: #1857d8;
+              color: #ffffff;
+              border: 1px solid #1857d8;
+            }
           }
         }
       }
