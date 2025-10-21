@@ -1,6 +1,5 @@
 import React from "react";
 import CommonBtn from "../commonElement/CommonBtn";
-import { SvgIcon } from "../commonElement/SvgIcon";
 import HeroSectionSlider from "./HeroSectionSlider";
 
 const HeroSection = () => {

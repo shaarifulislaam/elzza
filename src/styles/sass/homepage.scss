@@ -267,7 +267,7 @@ Hero Section
           height: 380px;
           max-width: 450px;
         }
-        .hero-section .hero-container .hero-img-block .hero__gallery-thumbs {
+        .hero__gallery-thumbs {
           width: 50px;
         }
       }
@@ -311,7 +311,7 @@ Hero Section
           height: 380px;
           max-width: 450px;
         }
-        .hero-section .hero-container .hero-img-block .hero__gallery-thumbs {
+        .hero__gallery-thumbs {
           width: 50px;
         }
       }
@@ -351,13 +351,28 @@ Hero Section
         }
       }
       .hero-img-block {
-        justify-content: center;
         .hero__gallery {
-          height: 280px;
           max-width: 350px;
+          flex-direction: column-reverse;
+          height: auto;
+          gap: 12px;
         }
-        .hero-section .hero-container .hero-img-block .hero__gallery-thumbs {
-          width: 40px;
+        .hero__gallery-thumbs {
+          width: 100%;
+          height: 64px;
+          order: 2;
+
+          .swiper-slide {
+            height: 100% !important;
+            width: calc((100% - 36px) / 4) !important;
+          }
+        }
+        .hero__gallery-main {
+          order: 1;
+          height: 350px;
+          .swiper-slide {
+            width: 100% !important;
+          }
         }
       }
     }

@@ -98,7 +98,7 @@ Top Bar Section
   }
   .navbar-toggler {
     color: $white;
-    background-color: $primary;
+
     border: 0;
     &:focus {
       box-shadow: 0 0 4px 1px;
@@ -136,13 +136,10 @@ Top Bar Section
     background-color: transparent;
     transition: background-color 0.3s ease;
   }
+
   &.scrolled {
-    width: 100%;
     background-color: rgb(146 159 173 / 74%);
-    padding: 8px 25px;
-    border-radius: 16px;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    transition: background-color 0.3s ease;
   }
 
   .navbar-brand {
@@ -226,62 +223,13 @@ Top Bar Section
       }
     }
   }
-  .common-btn-block {
-    padding-top: 0 !important;
-    .button {
-      display: none;
-    }
-    .button-try {
-      background: $primary;
-      color: $white2;
-      border: 1px solid $primary;
-      &:hover {
-        background: var(
-          --Blue-Gradient,
-          linear-gradient(174deg, #006ce0 4.92%, #72b6ff 94.93%)
-        );
-        color: $white;
-        .button__icons {
-          background: $white2 !important;
-          border: 1px solid $primary !important;
-        }
-      }
-      .button__icons {
-        border: 1px solid $white2 !important;
-        &.is-white {
-          border-color: $primary;
-          background-color: $primary;
-          position: relative;
-        }
-        .button__icon-anim {
-          .icon-small {
-            svg {
-              path {
-                fill: $white2;
-              }
-            }
-            &.is-absolute {
-              svg {
-                path {
-                  fill: $primary;
-                }
-              }
-            }
-          }
-        }
 
-        .button__bg {
-          background: transparent;
-        }
-      }
-    }
-  }
   .mobile-nav {
     // background: $darkBlue;
     position: fixed;
     left: 7px;
     right: 7px;
-    top: 76px;
+    top: 90px;
     bottom: 0;
     z-index: 999;
     display: flex;
@@ -322,40 +270,12 @@ Top Bar Section
           .menu-link {
             font-size: 16px;
             color: $white2;
-            &.different {
-              background: var(
-                --Text-Gradient,
-                linear-gradient(90deg, #f4ab98 0%, #7dbcff 100%)
-              );
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            }
+
             &.active {
               color: $primary;
             }
           }
         }
-      }
-    }
-    .btn-container {
-      width: 100%;
-      padding-block: 12px;
-      border-top: 1px solid rgba(255, 255, 255, 0.24);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.24);
-
-      .btn {
-        font-size: 16px;
-        font-weight: 500;
-        color: $white;
-        border-radius: 8px;
-        background: linear-gradient(180deg, #006ce0 0%, #4888cc 100%);
-        width: 100%;
-        padding-block: 12px;
-        border: 0;
-      }
-      .nav-btn-link {
-        border-radius: 8px;
       }
     }
   }
@@ -713,6 +633,39 @@ Top Bar Section
         .footer-subscribe {
           max-width: 520px;
           margin-inline: auto;
+        }
+      }
+    }
+  }
+
+  .top-bar-section {
+    display: none;
+  }
+  .top-navbar {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    &.transparent {
+      background-color: transparent !important;
+    }
+    &.scrolled {
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+    .for-mobile {
+      width: 100%;
+      background-color: #05284cbd;
+
+      padding: 8px 25px;
+      // margin-inline: 10px;
+      border-radius: 16px;
+      backdrop-filter: blur(4px);
+      .navbar-brand {
+        width: unset !important;
+        img {
+          filter: brightness(0) invert(1);
         }
       }
     }

@@ -30,7 +30,7 @@ const Navbar = () => {
       ref={navbarRef}
     >
       <div className="el-container d-flex justify-content-between align-items-center">
-        <div className="d-flex justify-content-between">
+        <div className="for-mobile d-flex justify-content-between">
           <Link href="/" className="navbar-brand border-0">
             <Image
               src="/assets/images/logo.svg"
@@ -202,6 +202,102 @@ const Navbar = () => {
               <CommonBtn btnText="Get a Quote" link={"/"} />
             </li>
           </ul>
+        </div>
+        {/* Mobile Nav */}
+        <div className={`mobile-nav ${isNavOpen ? "open" : ""}`}>
+          <div className="menu-block">
+            <ul className="menu-list">
+              {/* Home */}
+              <li className="menu-item">
+                <Link className="menu-link" href="/">
+                  Home
+                </Link>
+              </li>
+
+              {/* Product Dropdown */}
+              <li className="menu-item dropdown">
+                <Link
+                  className="menu-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>Product</span>
+                </Link>
+
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              {/* Services Dropdown */}
+              <li className="menu-item dropdown">
+                <Link
+                  className="menu-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>Services</span>
+                </Link>
+
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              {/* Projects */}
+              <li className="menu-item">
+                <Link className="menu-link" href="/">
+                  Projects
+                </Link>
+              </li>
+
+              {/* About */}
+              <li className="menu-item">
+                <Link className="menu-link" href="/">
+                  About
+                </Link>
+              </li>
+
+              {/* Contact */}
+              <li className="menu-item">
+                <Link className="menu-link" href="/">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
