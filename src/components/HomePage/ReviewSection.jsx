@@ -170,7 +170,7 @@ export const reviewsData = [
     review: "Wade Warren",
     desc: "“Excellent quality and craftsmanship! The installation was quick and clean, and the result exceeded our expectations.”",
     image: "/assets/images/Homepage/reviews/review2.png",
-    reviewCount: 4,
+    reviewCount: 3,
   },
   {
     id: 3,
