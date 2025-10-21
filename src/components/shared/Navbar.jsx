@@ -25,11 +25,8 @@ const Navbar = () => {
   return (
     <nav
       className={`navbar top-navbar sticky-top navbar-expand-lg ${
-        isScrolled ? "" : ""
+        isScrolled ? "scrolled" : "transparent"
       }`}
-      // className={`navbar top-navbar sticky-top navbar-expand-lg ${
-      //   isScrolled ? "scrolled" : "transparent"
-      // }`}
       ref={navbarRef}
     >
       <div className="el-container d-flex justify-content-between align-items-center">
