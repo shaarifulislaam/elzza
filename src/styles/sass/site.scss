@@ -5,7 +5,17 @@ body {
   scroll-behavior: smooth;
   font-family: var(--font-roboto), sans-serif;
 }
-
+#smooth-wrapper {
+  height: 100%;
+  overflow: hidden !important;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+#smooth-content,
+[data-speed] {
+  will-change: transform;
+}
 .without-focus {
   &:focus,
   &:active,
@@ -355,8 +365,22 @@ Top Bar Section
     margin-bottom: 0;
     .highlight {
       color: #1857d8;
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background-color: currentColor;
+        transition: width 0.6s ease;
+      }
     }
   }
+
   .desc {
     width: 100%;
     max-width: 865px;
@@ -388,6 +412,9 @@ Top Bar Section
         .footer-logo {
           width: 100%;
           max-width: 150px;
+          &:last-child {
+            max-width: 70px;
+          }
           img {
             width: 100%;
           }

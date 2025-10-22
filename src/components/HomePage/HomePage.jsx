@@ -22,7 +22,6 @@ const HomePage = () => {
       <VisionSection />
       <ReviewSection />
       <GallerySection />
-
       <Blogs />
     </>
   );

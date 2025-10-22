@@ -1,24 +1,103 @@
 "use client";
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
-// import required modules
-import { Navigation } from "swiper/modules";
 import CommonTitle from "../commonElement/CommonTitle";
 import CommonBtn from "../commonElement/CommonBtn";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const ProjectsSection = () => {
   const swiperRef = useRef(null);
+  const sectionRef = useRef(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Animate section title
+      gsap.fromTo(
+        ".projects-section .common-title-block",
+        { opacity: 0, y: 60 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 85%",
+            once: true,
+          },
+        }
+      );
+
+      // Animate Swiper slides (fade-up stagger)
+      gsap.fromTo(
+        ".projects-block-container",
+        { opacity: 0, y: 60 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".projects-container",
+            start: "top 80%",
+            once: true,
+          },
+        }
+      );
+
+      // Animate navigation + button
+      gsap.fromTo(
+        ".projects-navigation",
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          delay: 0.4,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".projects-container",
+            start: "top 80%",
+            once: true,
+          },
+        }
+      );
+
+      // Optional: image scale-in effect
+      gsap.fromTo(
+        ".projects-block-container .img-container img",
+        { scale: 1.1, opacity: 0 },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.15,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".projects-container",
+            start: "top 75%",
+            once: true,
+          },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="projects-section">
+    <section className="projects-section" ref={sectionRef}>
       <div className="el-container">
         <CommonTitle
           title=" Experience the"
@@ -27,6 +106,7 @@ const ProjectsSection = () => {
           subTitle="You Recent Projects"
           desc="Browse some of our latest installations – where design, durability, and precision come together beautifully."
         />
+
         <div className="projects-container">
           <Swiper
             slidesPerView={2}
@@ -43,14 +123,8 @@ const ProjectsSection = () => {
             spaceBetween={30}
             className="mySwiper"
             breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-              },
+              320: { slidesPerView: 1, spaceBetween: 20 },
+              768: { slidesPerView: 2, spaceBetween: 30 },
             }}
           >
             {projectData.map((project) => (
@@ -100,6 +174,7 @@ const ProjectsSection = () => {
               }
               link="/"
             />
+
             <div className="nav-buttons">
               <button
                 className="nav-btn nav-prev"
@@ -123,6 +198,7 @@ const ProjectsSection = () => {
                   />
                 </svg>
               </button>
+
               <button
                 className="nav-btn nav-next"
                 onClick={() => swiperRef.current?.slideNext()}
@@ -154,7 +230,8 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
-// data/projectData.js
+
+// Data
 export const projectData = [
   {
     id: 1,

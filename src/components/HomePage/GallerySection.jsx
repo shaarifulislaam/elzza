@@ -1,10 +1,54 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CommonTitle from "../commonElement/CommonTitle";
 import CommonBtn from "../commonElement/CommonBtn";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const GallerySection = () => {
+  const galleryRef = useRef(null);
+
+  useEffect(() => {
+    const galleryItems = galleryRef.current.querySelectorAll(".grid-item");
+
+    // Animate each gallery item
+    galleryItems.forEach((item, index) => {
+      gsap.fromTo(
+        item,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          delay: index * 0.2,
+          scrollTrigger: {
+            trigger: item,
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    });
+
+    // Animate the button
+    gsap.from(".button-container", {
+      opacity: 0,
+      y: 30,
+      duration: 0.8,
+      delay: 0.2,
+      scrollTrigger: {
+        trigger: ".button-container",
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    });
+  }, []);
+
   return (
-    <section className="gallery-section">
+    <section className="gallery-section" ref={galleryRef}>
       <div className="el-container">
         <CommonTitle title="Gallery Of " highLight="Elzza" />
         <div className="bento-grid">
@@ -41,6 +85,7 @@ const GallerySection = () => {
 };
 
 export default GallerySection;
+
 export const bentoGridData = [
   {
     id: 1,

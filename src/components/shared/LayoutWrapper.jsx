@@ -7,9 +7,9 @@ import TopBar from "./TopBar";
 export default function LayoutWrapper({ children }) {
   return (
     <>
+      {" "}
       <TopBar />
       <Navbar />
-
       {children}
       <Footer />
     </>

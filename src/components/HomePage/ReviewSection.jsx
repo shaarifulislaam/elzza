@@ -1,22 +1,68 @@
 "use client";
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
-// import required modules
 import { Navigation } from "swiper/modules";
 import CommonTitle from "../commonElement/CommonTitle";
 import CommonBtn from "../commonElement/CommonBtn";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const ReviewSection = () => {
   const swiperRef = useRef(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+  const sectionRef = useRef(null);
+  const slidesRef = useRef([]);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Title animation
+      gsap.from(".common-title-block", {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".common-title-block",
+          start: "top 85%",
+        },
+      });
+
+      // Review slides animation
+      gsap.from(slidesRef.current, {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+        },
+      });
+
+      // Navigation fade-in
+      gsap.from(".review-navigation", {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".review-navigation",
+          start: "top 90%",
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <search className="review-section">
+    <section className="review-section" ref={sectionRef}>
       <div className="el-container">
         <CommonTitle
           subTitle="Our Customer Reviews"
@@ -39,23 +85,17 @@ const ReviewSection = () => {
             spaceBetween={30}
             className="mySwiper"
             breakpoints={{
-              320: {
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-              1080: {
-                slidesPerView: 3.5,
-                spaceBetween: 30,
-              },
+              320: { slidesPerView: 1.2, spaceBetween: 20 },
+              768: { slidesPerView: 3, spaceBetween: 20 },
+              1080: { slidesPerView: 3.5, spaceBetween: 30 },
             }}
           >
-            {reviewsData.map((review) => (
-              <SwiperSlide>
-                <div className="review-block-container" key={review.id}>
+            {reviewsData.map((review, i) => (
+              <SwiperSlide key={review.id}>
+                <div
+                  className="review-block-container"
+                  ref={(el) => (slidesRef.current[i] = el)}
+                >
                   <div className="img-container">
                     <img src={review.image} alt={review.review} />
                   </div>
@@ -156,11 +196,13 @@ const ReviewSection = () => {
           </div>
         </div>
       </div>
-    </search>
+    </section>
   );
 };
 
 export default ReviewSection;
+
+// Reviews data
 export const reviewsData = [
   {
     id: 1,
@@ -189,12 +231,5 @@ export const reviewsData = [
     desc: "“Our new sliding doors are stunning! They open effortlessly and have completely changed the feel of our living room.”",
     image: "/assets/images/Homepage/reviews/review4.png",
     reviewCount: 3,
-  },
-  {
-    id: 5,
-    review: "Theresa Webb",
-    desc: "“Elzza did an amazing job replacing our windows and doors. Great quality, smooth installation, and excellent communication throughout.”",
-    image: "/assets/images/Homepage/reviews/review1.png",
-    reviewCount: 5,
   },
 ];

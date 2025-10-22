@@ -1,50 +1,120 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import CommonTitle from "../commonElement/CommonTitle";
 import CommonBtn from "../commonElement/CommonBtn";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ProductsSection = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Animate section title
+      gsap.fromTo(
+        ".products-section .common-title-block",
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 85%",
+          },
+        }
+      );
+
+      // Animate product cards
+      gsap.fromTo(
+        ".products-section .product-block",
+        {
+          opacity: 0,
+          y: 80,
+          scale: 0.95,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 75%",
+          },
+        }
+      );
+
+      // Button subtle pop-in
+      gsap.fromTo(
+        ".products-section .product-block .common-btn",
+        { scale: 0.9, opacity: 0 },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 0.8,
+          delay: 0.5,
+          stagger: 0.2,
+          ease: "back.out(1.7)",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 75%",
+          },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="products-section">
+    <section ref={sectionRef} className="products-section">
       <div className="el-container">
         <CommonTitle
           subTitle="Our Products"
           title="Explore modern and "
-          highLight="classic custom solutions for every home."
-          title2="for every home."
+          highLight="classic custom solutions"
+          title2=" for every home."
         />
         <div className="products-container">
-          {productsData?.map((product) => {
-            return (
-              <div key={product?.id} className="product-block">
-                <div className="img-container">
-                  <img src={product?.image} alt={product?.title} />
-                </div>
-                <div className="text-container">
-                  <h3 className="title">{product?.title}</h3>
-                  <p className="desc">{product?.desc}</p>
-                  <CommonBtn
-                    btnText="View Details"
-                    link="/"
-                    variant="secondary"
-                    btnIcon={
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <path
-                          d="M17.5383 10.6633L11.9133 16.2883C11.7372 16.4644 11.4983 16.5634 11.2492 16.5634C11.0001 16.5634 10.7613 16.4644 10.5852 16.2883C10.409 16.1122 10.3101 15.8733 10.3101 15.6242C10.3101 15.3752 10.409 15.1363 10.5852 14.9602L14.6094 10.9375H3.125C2.87636 10.9375 2.6379 10.8387 2.46209 10.6629C2.28627 10.4871 2.1875 10.2487 2.1875 10C2.1875 9.75137 2.28627 9.51292 2.46209 9.3371C2.6379 9.16129 2.87636 9.06252 3.125 9.06252H14.6094L10.5867 5.03751C10.4106 4.86139 10.3117 4.62252 10.3117 4.37345C10.3117 4.12438 10.4106 3.88551 10.5867 3.70939C10.7628 3.53327 11.0017 3.43433 11.2508 3.43433C11.4999 3.43433 11.7387 3.53327 11.9148 3.70939L17.5398 9.33439C17.6273 9.4216 17.6966 9.52523 17.7438 9.63931C17.7911 9.75339 17.8153 9.87569 17.8152 9.99917C17.815 10.1226 17.7905 10.2449 17.743 10.3589C17.6955 10.4728 17.6259 10.5763 17.5383 10.6633Z"
-                          fill="#001149"
-                        />
-                      </svg>
-                    }
-                  />
-                </div>
+          {productsData?.map((product) => (
+            <div key={product?.id} className="product-block">
+              <div className="img-container">
+                <img src={product?.image} alt={product?.title} />
               </div>
-            );
-          })}
+              <div className="text-container">
+                <h3 className="title">{product?.title}</h3>
+                <p className="desc">{product?.desc}</p>
+                <CommonBtn
+                  btnText="View Details"
+                  link="/"
+                  variant="secondary"
+                  btnIcon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.5383 10.6633L11.9133 16.2883C11.7372 16.4644 11.4983 16.5634 11.2492 16.5634C11.0001 16.5634 10.7613 16.4644 10.5852 16.2883C10.409 16.1122 10.3101 15.8733 10.3101 15.6242C10.3101 15.3752 10.409 15.1363 10.5852 14.9602L14.6094 10.9375H3.125C2.87636 10.9375 2.6379 10.8387 2.46209 10.6629C2.28627 10.4871 2.1875 10.2487 2.1875 10C2.1875 9.75137 2.28627 9.51292 2.46209 9.3371C2.6379 9.16129 2.87636 9.06252 3.125 9.06252H14.6094L10.5867 5.03751C10.4106 4.86139 10.3117 4.62252 10.3117 4.37345C10.3117 4.12438 10.4106 3.88551 10.5867 3.70939C10.7628 3.53327 11.0017 3.43433 11.2508 3.43433C11.4999 3.43433 11.7387 3.53327 11.9148 3.70939L17.5398 9.33439C17.6273 9.4216 17.6966 9.52523 17.7438 9.63931C17.7911 9.75339 17.8153 9.87569 17.8152 9.99917C17.815 10.1226 17.7905 10.2449 17.743 10.3589C17.6955 10.4728 17.6259 10.5763 17.5383 10.6633Z"
+                        fill="#001149"
+                      />
+                    </svg>
+                  }
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -62,14 +132,14 @@ export const productsData = [
   },
   {
     id: 2,
-    title: "Window Frames",
-    desc: "Sleek, secure, and energy-efficient – available in multiple styles and finishes.",
+    title: "Glass Doors",
+    desc: "Modern, elegant glass doors to elevate any interior space with clarity and style.",
     image: "/assets/images/Homepage/product/product2.png",
   },
   {
     id: 3,
-    title: "Window Frames",
-    desc: "Sleek, secure, and energy-efficient – available in multiple styles and finishes.",
+    title: "Curtain Walls",
+    desc: "High-performance facades designed for durability, insulation, and aesthetic appeal.",
     image: "/assets/images/Homepage/product/product3.png",
   },
 ];

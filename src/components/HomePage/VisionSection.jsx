@@ -1,10 +1,49 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import CommonTitle from "../commonElement/CommonTitle";
 import Link from "next/link";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const VisionSection = () => {
+  const sectionRef = useRef(null);
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Animate title block
+      gsap.from(".common-title-block", {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".common-title-block",
+          start: "top 85%",
+        },
+      });
+
+      // Animate cards
+      gsap.from(cardsRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert(); // cleanup on unmount
+  }, []);
+
   return (
-    <section className="vision-section">
+    <section className="vision-section" ref={sectionRef}>
       <div className="el-container">
         <CommonTitle
           subTitle="Our Versions"
@@ -13,10 +52,11 @@ const VisionSection = () => {
           title2="of Modern Window and Door Design"
         />
         <div className="product-grid">
-          {productCards.map((card) => (
+          {productCards.map((card, index) => (
             <article
               className="product-card"
               key={card.id}
+              ref={(el) => (cardsRef.current[index] = el)}
               aria-labelledby={`${card.id}-title`}
             >
               <div className="img-container">
@@ -80,6 +120,7 @@ const VisionSection = () => {
 };
 
 export default VisionSection;
+
 export const productCards = [
   {
     id: "classic-6",

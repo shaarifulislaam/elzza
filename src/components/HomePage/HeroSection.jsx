@@ -1,13 +1,85 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CommonBtn from "../commonElement/CommonBtn";
 import HeroSectionSlider from "./HeroSectionSlider";
 
+gsap.registerPlugin(ScrollTrigger);
 const HeroSection = () => {
   const listItems = [
     "17+ Years of Experience",
     "Certified & Guaranteed",
     "Fast & Reliable Service",
   ];
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Timeline for hero text block
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".hero-section",
+          start: "top 90%", // when section enters viewport
+        },
+      });
+
+      tl.from(".hero-text-block .img-container", {
+        opacity: 0,
+        y: -40,
+        duration: 0.8,
+        ease: "power3.out",
+      })
+        .from(".hero-title span", {
+          y: 60,
+          opacity: 0,
+          stagger: 0.2,
+          duration: 0.8,
+          ease: "power3.out",
+        })
+        .from(".hero-text-block .desc", {
+          opacity: 0,
+          y: 20,
+          duration: 0.6,
+          ease: "power2.out",
+        })
+        .from(".btn-container", {
+          opacity: 0,
+          y: 20,
+          duration: 0.6,
+          ease: "power2.out",
+        })
+        .from(".services-list .list-item", {
+          opacity: 0,
+          y: 15,
+          stagger: 0.15,
+          duration: 0.6,
+          ease: "power2.out",
+        });
+
+      // Hero image slide animation
+      gsap.from(".hero-img-block", {
+        scrollTrigger: {
+          trigger: ".hero-section",
+          start: "top 80%",
+        },
+        opacity: 0,
+        x: 60,
+        duration: 1,
+        ease: "power3.out",
+      });
+    });
+
+    return () => ctx.revert(); // cleanup on unmount
+  }, []);
+  useEffect(() => {
+    gsap.to(".hero-img-block", {
+      y: "+=15",
+      duration: 3,
+      ease: "sine.inOut",
+      repeat: -1,
+      yoyo: true,
+    });
+  }, []);
+
   return (
     <section className="hero-section">
       <div className="el-container">
