@@ -19,9 +19,9 @@ const HomePage = () => {
       <ServicesSection />
       <WhyChoose />
       <ProjectsSection />
+      <VisionSection />
       <ReviewSection />
       <GallerySection />
-      <VisionSection />
 
       <Blogs />
     </>

@@ -302,6 +302,9 @@ Top Bar Section
       &:hover {
         background: none;
         color: $primary;
+        .icon svg path {
+          fill: $primary !important;
+        }
       }
     }
 
@@ -313,6 +316,9 @@ Top Bar Section
       &:hover {
         background: #001149;
         color: #fff;
+        .icon svg path {
+          fill: $white !important;
+        }
       }
     }
   }
