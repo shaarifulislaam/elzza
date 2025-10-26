@@ -46,11 +46,12 @@ const VisionSection = () => {
     <section className="vision-section" ref={sectionRef}>
       <div className="el-container">
         <CommonTitle
-          subTitle="Our Versions"
-          title="Explore"
-          highLight="Explore Our Full Range "
-          title2="of Modern Window and Door Design"
+          subTitle="Onze Collecties"
+          title="Ontdek"
+          highLight="Ons Volledige Assortiment "
+          title2="van Moderne Raam- en Deurontwerpen"
         />
+
         <div className="product-grid">
           {productCards.map((card, index) => (
             <article
@@ -126,7 +127,7 @@ export const productCards = [
     id: "classic-6",
     title: "Elzza Classic 6°",
     subtitle:
-      "Timeless design with a refined finish that mirrors the natural warmth of wood.",
+      "Tijdloos design met een verfijnde afwerking die de natuurlijke warmte van hout weerspiegelt.",
     image: "/assets/images/Homepage/vision/1.png",
     docs: [
       {
@@ -137,13 +138,13 @@ export const productCards = [
       },
       {
         id: "profile",
-        label: "Elzza Window Profile Guide",
+        label: "Elzza Raamprofiel Gids",
         href: "/assets/docs/classic-6-profile.pdf",
         type: "static",
       },
       {
         id: "care",
-        label: "Care Instructions",
+        label: "Onderhoudsinstructies",
         href: "/assets/docs/classic-6-care.pdf",
         type: "static",
       },
@@ -153,7 +154,7 @@ export const productCards = [
     id: "modern-15",
     title: "Elzza Modern 15°",
     subtitle:
-      "Sleek angled design that brings depth and sophistication to any façade.",
+      "Strak, hoekig ontwerp dat diepte en elegantie toevoegt aan elke gevel.",
     image: "/assets/images/Homepage/vision/1.png",
     docs: [
       {
@@ -164,13 +165,13 @@ export const productCards = [
       },
       {
         id: "install",
-        label: "Installation Guide",
+        label: "Installatiehandleiding",
         href: "/assets/images/Homepage/vision/1.png",
         type: "static",
       },
       {
         id: "maintenance",
-        label: "Maintenance Tips",
+        label: "Onderhoudstips",
         href: "/assets/docs/modern-15-maintenance.pdf",
         type: "static",
       },
@@ -180,7 +181,7 @@ export const productCards = [
     id: "city-line",
     title: "Elzza City Line",
     subtitle:
-      "Straight contours with a historic charm crafted for urban homes and restorations.",
+      "Strakke lijnen met een historische charme, ontworpen voor stedelijke woningen en restauraties.",
     image: "/assets/images/Homepage/vision/1.png",
     docs: [
       {
@@ -191,13 +192,13 @@ export const productCards = [
       },
       {
         id: "profile",
-        label: "Profile System Details",
+        label: "Profielsysteem Details",
         href: "/assets/docs/city-line-profile.pdf",
         type: "static",
       },
       {
         id: "care",
-        label: "Care Instructions",
+        label: "Onderhoudsinstructies",
         href: "/assets/docs/city-line-care.pdf",
         type: "static",
       },
@@ -207,24 +208,24 @@ export const productCards = [
     id: "flat",
     title: "Elzza Flat",
     subtitle:
-      "A streamlined, ultra-modern design emphasizing clean lines and contemporary aesthetics.",
+      "Een strak, ultramodern ontwerp dat focust op rechte lijnen en een eigentijdse uitstraling.",
     image: "/assets/images/Homepage/vision/1.png",
     docs: [
       {
         id: "brochure",
-        label: "Download Brochure — Flat Series",
+        label: "Download Brochure — Flat Serie",
         href: "/assets/docs/flat-brochure.pdf",
         type: "static",
       },
       {
         id: "install",
-        label: "Installation Manual",
+        label: "Installatiehandleiding",
         href: "/assets/docs/flat-install.pdf",
         type: "static",
       },
       {
         id: "care",
-        label: "Care Instructions",
+        label: "Onderhoudsinstructies",
         href: "/assets/docs/flat-care.pdf",
         type: "static",
       },

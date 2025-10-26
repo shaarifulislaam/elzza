@@ -65,9 +65,9 @@ const ReviewSection = () => {
     <section className="review-section" ref={sectionRef}>
       <div className="el-container">
         <CommonTitle
-          subTitle="Our Customer Reviews"
-          title="What Our "
-          highLight="Customers Say"
+          subTitle="Onze Klantbeoordelingen"
+          title="Wat Onze "
+          highLight="Klanten Zeggen"
         />
         <div className="review-container">
           <Swiper
@@ -127,10 +127,10 @@ const ReviewSection = () => {
             ))}
           </Swiper>
 
-          {/* Navigation Buttons */}
+          {/* Navigatieknoppen */}
           <div className="review-navigation">
             <CommonBtn
-              btnText="View All Reviews"
+              btnText="Bekijk Alle Beoordelingen"
               btnIcon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ const ReviewSection = () => {
                 className="nav-btn nav-prev"
                 onClick={() => swiperRef.current?.slidePrev()}
                 disabled={isBeginning}
-                aria-label="Previous slide"
+                aria-label="Vorige slide"
               >
                 <svg
                   width="24"
@@ -174,7 +174,7 @@ const ReviewSection = () => {
                 className="nav-btn nav-next"
                 onClick={() => swiperRef.current?.slideNext()}
                 disabled={isEnd}
-                aria-label="Next slide"
+                aria-label="Volgende slide"
               >
                 <svg
                   width="24"
@@ -202,33 +202,32 @@ const ReviewSection = () => {
 
 export default ReviewSection;
 
-// Reviews data
 export const reviewsData = [
   {
     id: 1,
     review: "Theresa Webb",
-    desc: "“Elzza did an amazing job replacing our windows and doors. Great quality, smooth installation, and excellent communication throughout.”",
+    desc: "“Elzza heeft fantastisch werk geleverd bij het vervangen van onze ramen en deuren. Uitstekende kwaliteit, vlotte installatie en geweldige communicatie gedurende het hele proces.”",
     image: "/assets/images/Homepage/reviews/review1.png",
     reviewCount: 5,
   },
   {
     id: 2,
     review: "Wade Warren",
-    desc: "“Excellent quality and craftsmanship! The installation was quick and clean, and the result exceeded our expectations.”",
+    desc: "“Uitstekende kwaliteit en vakmanschap! De installatie was snel en netjes, en het resultaat overtrof onze verwachtingen.”",
     image: "/assets/images/Homepage/reviews/review2.png",
     reviewCount: 3,
   },
   {
     id: 3,
     review: "Marvin McKinney",
-    desc: "“From quote to installation, everything went smoothly. Friendly team, honest pricing, and amazing final look!”",
+    desc: "“Van offerte tot installatie verliep alles soepel. Vriendelijk team, eerlijke prijzen en een prachtig eindresultaat!”",
     image: "/assets/images/Homepage/reviews/review3.png",
     reviewCount: 5,
   },
   {
     id: 4,
     review: "Guy Hawkins",
-    desc: "“Our new sliding doors are stunning! They open effortlessly and have completely changed the feel of our living room.”",
+    desc: "“Onze nieuwe schuifdeuren zijn prachtig! Ze openen moeiteloos en hebben de uitstraling van onze woonkamer volledig veranderd.”",
     image: "/assets/images/Homepage/reviews/review4.png",
     reviewCount: 3,
   },

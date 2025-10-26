@@ -99,7 +99,7 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span>Product</span>
+                  <span>Producten</span>
                   <span className="icon">
                     <svg
                       width="16"
@@ -119,17 +119,17 @@ const Navbar = () => {
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Actie
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Nog een actie
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      Iets anders hier
                     </a>
                   </li>
                 </ul>
@@ -144,7 +144,7 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span>Services</span>
+                  <span>Diensten</span>
                   <span className="icon">
                     <svg
                       width="16"
@@ -164,17 +164,17 @@ const Navbar = () => {
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Actie
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Nog een actie
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      Iets anders hier
                     </a>
                   </li>
                 </ul>
@@ -182,12 +182,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" href="/">
-                Projects
+                Projecten
               </Link>
-            </li>{" "}
+            </li>
             <li className="nav-item">
               <Link className="nav-link" href="/">
-                About
+                Over Ons
               </Link>
             </li>
             <li className="nav-item">
@@ -199,7 +199,7 @@ const Navbar = () => {
 
           <ul className="navbar-nav right-nav ms-auto">
             <li className="nav-item">
-              <CommonBtn btnText="Get a Quote" link={"/"} />
+              <CommonBtn btnText="Offerte Aanvragen" link={"/"} />
             </li>
           </ul>
         </div>
@@ -223,23 +223,23 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span>Product</span>
+                  <span>Producten</span>
                 </Link>
 
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Actie
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Nog een actie
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      Iets anders hier
                     </a>
                   </li>
                 </ul>
@@ -254,23 +254,23 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span>Services</span>
+                  <span>Diensten</span>
                 </Link>
 
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Actie
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Nog een actie
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      Iets anders hier
                     </a>
                   </li>
                 </ul>
@@ -279,14 +279,14 @@ const Navbar = () => {
               {/* Projects */}
               <li className="menu-item">
                 <Link className="menu-link" href="/">
-                  Projects
+                  Projecten
                 </Link>
               </li>
 
               {/* About */}
               <li className="menu-item">
                 <Link className="menu-link" href="/">
-                  About
+                  Over Ons
                 </Link>
               </li>
 

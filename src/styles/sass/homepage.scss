@@ -173,6 +173,28 @@ Hero Section
           top: -15%;
           left: -26%;
         }
+        .services-list {
+          .list-item {
+            .lbl {
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1300px) {
+  .hero-section {
+    .hero-container {
+      .hero-text-block {
+        .services-list {
+          .list-item {
+            .lbl {
+              white-space: nowrap;
+            }
+          }
+        }
       }
     }
   }

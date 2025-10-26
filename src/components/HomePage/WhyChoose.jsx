@@ -88,10 +88,10 @@ const WhyChoose = () => {
     <section className="why-choose-section" ref={sectionRef}>
       <div className="el-container">
         <CommonTitle
-          subTitle="WHY CHOOSE ELZZA"
-          title="How We Work to "
-          highLight="Deliver Excellence "
-          title1="for Every Home"
+          subTitle="WAAROM KIEZEN VOOR ELZZA"
+          title="Hoe wij werken om "
+          highLight="uitmuntendheid te leveren "
+          title1="voor elk huis"
         />
 
         <div className="why-choose-container">
@@ -99,15 +99,15 @@ const WhyChoose = () => {
             <div className="img-container">
               <img
                 src="/assets/images/Homepage/whyChoose/why.png"
-                alt="Why Choose"
+                alt="Waarom kiezen"
               />
             </div>
             <div className="text-container">
-              <div className="title">Personalized Consultation</div>
+              <div className="title">Persoonlijk Adviesgesprek</div>
               <div className="desc">
-                We start by understanding your vision, preferences, and home
-                style. Our experts guide you in selecting the perfect design and
-                materials.
+                We beginnen met het begrijpen van uw wensen, voorkeuren en stijl
+                van de woning. Onze experts begeleiden u bij het kiezen van het
+                perfecte ontwerp en de juiste materialen.
               </div>
             </div>
           </div>
@@ -136,26 +136,26 @@ export default WhyChoose;
 export const serviceData = [
   {
     id: 1,
-    title: "Custom Design & Planning",
-    desc: "Every Elzza product is tailored to fit your home’s unique structure.",
+    title: "Maatwerkontwerp & Planning",
+    desc: "Elk Elzza-product wordt op maat gemaakt voor de unieke structuur van uw woning.",
     image: "/assets/images/Homepage/whyChoose/1.svg",
   },
   {
     id: 2,
-    title: "Professional Installation",
-    desc: "Our skilled team ensures a seamless installation process — fast, clean, and detail-focused.",
+    title: "Professionele Installatie",
+    desc: "Ons ervaren team zorgt voor een vlekkeloze installatie — snel, netjes en met oog voor detail.",
     image: "/assets/images/Homepage/whyChoose/2.svg",
   },
   {
     id: 3,
-    title: "Quality Assurance",
-    desc: "Each window and door goes through strict quality control to ensure durability and performance.",
+    title: "Kwaliteitsgarantie",
+    desc: "Elk raam en elke deur ondergaat een strenge kwaliteitscontrole om duurzaamheid en topprestaties te garanderen.",
     image: "/assets/images/Homepage/whyChoose/3.svg",
   },
   {
     id: 4,
-    title: "Aftercare & Support",
-    desc: "We offer ongoing support, maintenance tips, and product warranties for peace of mind.",
+    title: "Nazorg & Ondersteuning",
+    desc: "Wij bieden voortdurende ondersteuning, onderhoudstips en productgaranties voor volledige gemoedsrust.",
     image: "/assets/images/Homepage/whyChoose/4.svg",
   },
 ];

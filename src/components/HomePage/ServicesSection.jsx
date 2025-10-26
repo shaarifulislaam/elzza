@@ -71,11 +71,11 @@ const ServicesSection = () => {
         <div className="services-container">
           <div className="service-text-block">
             <div className="title">
-              Your Trusted Partner for Quality and Precision
+              Uw betrouwbare partner voor kwaliteit en precisie
             </div>
             <div className="text">
-              We combine craftsmanship, innovation, and sustainability to
-              deliver window and door solutions that last a lifetime.
+              Wij combineren vakmanschap, innovatie en duurzaamheid om ramen- en
+              deuroplossingen te leveren die een leven lang meegaan.
             </div>
 
             <div className="service-list-container">
@@ -94,7 +94,7 @@ const ServicesSection = () => {
           </div>
 
           <div className="img-container">
-            <img src="/assets/images/Homepage/services.png" alt="Services" />
+            <img src="/assets/images/Homepage/services.png" alt="Diensten" />
           </div>
         </div>
       </div>
@@ -107,26 +107,26 @@ export default ServicesSection;
 export const servicesData = [
   {
     id: 1,
-    title: "Craftsmanship & Quality",
-    text: "Every frame is built with precision and premium materials.",
+    title: "Vakmanschap & Kwaliteit",
+    text: "Elk kozijn wordt met precisie en hoogwaardige materialen vervaardigd.",
     icon: "/assets/images/Homepage/services/service1.svg",
   },
   {
     id: 2,
-    title: "Innovative Design",
-    text: "Combining aesthetics and functionality for modern living.",
+    title: "Innovatief Design",
+    text: "De perfecte balans tussen esthetiek en functionaliteit voor modern wonen.",
     icon: "/assets/images/Homepage/services/service2.svg",
   },
   {
     id: 3,
-    title: "Sustainable Materials",
-    text: "Eco-friendly products designed for long-term performance.",
+    title: "Duurzame Materialen",
+    text: "Milieuvriendelijke producten ontworpen voor langdurige prestaties.",
     icon: "/assets/images/Homepage/services/service3.svg",
   },
   {
     id: 4,
-    title: "Expert Installation",
-    text: "Installed with precision to ensure durability and reliability.",
+    title: "Professionele Installatie",
+    text: "Met precisie geplaatst voor maximale duurzaamheid en betrouwbaarheid.",
     icon: "/assets/images/Homepage/services/service4.svg",
   },
 ];

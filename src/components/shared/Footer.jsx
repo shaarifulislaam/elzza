@@ -20,27 +20,28 @@ const Footer = () => {
             </div>
 
             <p className="footer-description">
-              Elzza specializes in premium windows, doors, and sliding systems
-              designed to enhance comfort, style, and energy efficiency. With a
-              commitment to quality craftsmanship and innovation, we help
-              homeowners create bright, beautiful, and durable living spaces.
+              Elzza is gespecialiseerd in hoogwaardige ramen, deuren en
+              schuifsystemen die ontworpen zijn om comfort, stijl en
+              energie-efficiëntie te verbeteren. Met een focus op kwaliteit en
+              innovatie helpen we huiseigenaren heldere, mooie en duurzame
+              woonruimtes te creëren.
             </p>
 
             <div className="footer-subscribe">
-              <input type="email" placeholder="Email here" />
-              <button>Subscribe</button>
+              <input type="email" placeholder="Vul je e-mailadres in" />
+              <button>Abonneren</button>
             </div>
 
             <p className="footer-note">
-              By subscribing you agree to with our Privacy Policy and provide
-              consent to receive updates from our company.
+              Door je te abonneren ga je akkoord met ons Privacybeleid en geef
+              je toestemming om updates van ons te ontvangen.
             </p>
           </div>
 
           {/* Links Section */}
           <div className="footer-links">
             <div className="footer-column">
-              <h4 className="footer-title">Quick Links</h4>
+              <h4 className="footer-title">Snelle Links</h4>
               <ul className="footer-list">
                 <li>
                   <Link className="footer-item" href="/">
@@ -49,17 +50,17 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link className="footer-item" href="/about">
-                    About Us
+                    Over Ons
                   </Link>
                 </li>
                 <li>
                   <Link className="footer-item" href="/services">
-                    Services
+                    Diensten
                   </Link>
                 </li>
                 <li>
                   <Link className="footer-item" href="/projects">
-                    Project
+                    Projecten
                   </Link>
                 </li>
                 <li>
@@ -71,20 +72,20 @@ const Footer = () => {
             </div>
 
             <div className="footer-column">
-              <h4 className="footer-title">Our Products</h4>
+              <h4 className="footer-title">Onze Producten</h4>
               <ul className="footer-list">
-                <li className="footer-item">Aluminium Windows</li>
-                <li className="footer-item">Sliding Doors</li>
-                <li className="footer-item">Front Doors</li>
-                <li className="footer-item">Folding Systems</li>
-                <li className="footer-item">Glass Facades</li>
+                <li className="footer-item">Aluminium Ramen</li>
+                <li className="footer-item">Schuifdeuren</li>
+                <li className="footer-item">Voordeuren</li>
+                <li className="footer-item">Vouwsystemen</li>
+                <li className="footer-item">Glazen Gevels</li>
               </ul>
             </div>
           </div>
 
           {/* Contact Section */}
           <div className="footer-contact">
-            <h4 className="footer-title">Contact Us</h4>
+            <h4 className="footer-title">Contacteer Ons</h4>{" "}
             <p className="contact-info">
               {" "}
               <Link
@@ -113,9 +114,9 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="footer-bottom">
           <div className="footer-bottom-links">
-            <Link href="/">Privacy Policies</Link>
-            <Link href="/">Terms & Conditions</Link>
-            <Link href="#top">Back to top</Link>
+            <Link href="/">Privacybeleid</Link>
+            <Link href="/">Algemene Voorwaarden</Link>
+            <Link href="#top">Terug naar boven</Link>
           </div>
 
           <div className="footer-social">

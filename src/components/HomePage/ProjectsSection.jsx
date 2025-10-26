@@ -100,11 +100,11 @@ const ProjectsSection = () => {
     <section className="projects-section" ref={sectionRef}>
       <div className="el-container">
         <CommonTitle
-          title=" Experience the"
-          highLight="Remarkable Difference"
-          title2=" Our Expert Work Creates."
-          subTitle="You Recent Projects"
-          desc="Browse some of our latest installations – where design, durability, and precision come together beautifully."
+          title=" Ervaar het"
+          highLight="Verschil in Vakmanschap"
+          title2=" dat ons werk creëert."
+          subTitle="Onze Recente Projecten"
+          desc="Bekijk enkele van onze nieuwste installaties – waar design, duurzaamheid en precisie prachtig samenkomen."
         />
 
         <div className="projects-container">
@@ -136,9 +136,9 @@ const ProjectsSection = () => {
                         <img src={img} alt={project.title} />
                         <div className="cta-label">
                           {index === 0 ? (
-                            <span className="before">Before</span>
+                            <span className="before">Voor</span>
                           ) : (
-                            <span className="after">After</span>
+                            <span className="after">Na</span>
                           )}
                         </div>
                       </div>
@@ -154,10 +154,10 @@ const ProjectsSection = () => {
             ))}
           </Swiper>
 
-          {/* Navigation Buttons */}
+          {/* Navigatieknoppen */}
           <div className="projects-navigation">
             <CommonBtn
-              btnText="View All Projects"
+              btnText="Bekijk Alle Projecten"
               btnIcon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +180,7 @@ const ProjectsSection = () => {
                 className="nav-btn nav-prev"
                 onClick={() => swiperRef.current?.slidePrev()}
                 disabled={isBeginning}
-                aria-label="Previous slide"
+                aria-label="Vorige dia"
               >
                 <svg
                   width="24"
@@ -203,7 +203,7 @@ const ProjectsSection = () => {
                 className="nav-btn nav-next"
                 onClick={() => swiperRef.current?.slideNext()}
                 disabled={isEnd}
-                aria-label="Next slide"
+                aria-label="Volgende dia"
               >
                 <svg
                   width="24"
@@ -231,7 +231,6 @@ const ProjectsSection = () => {
 
 export default ProjectsSection;
 
-// Data
 export const projectData = [
   {
     id: 1,
@@ -239,8 +238,9 @@ export const projectData = [
       "/assets/images/Homepage/projects/image1.png",
       "/assets/images/Homepage/projects/image2.png",
     ],
-    title: "Black Windows and Doors Elevate Stunning Lakefront Home",
-    desc: "Elegant wood designs bring warmth and sophistication to a modern Murfreesboro renovation.",
+    title:
+      "Zwarte Ramen en Deuren Verhogen de Klasse van een Villa aan het Meer",
+    desc: "Elegante houtaccenten brengen warmte en verfijning in een moderne renovatie in Murfreesboro.",
   },
   {
     id: 2,
@@ -248,8 +248,8 @@ export const projectData = [
       "/assets/images/Homepage/projects/image1.png",
       "/assets/images/Homepage/projects/image2.png",
     ],
-    title: "Modern Aluminum Frames Transform Urban Apartment Design",
-    desc: "Sleek aluminum frames redefine the aesthetic of contemporary living spaces.",
+    title: "Moderne Aluminium Kozijnen Transformeren Stedelijk Appartement",
+    desc: "Strakke aluminium profielen herdefiniëren het uiterlijk van eigentijdse woonruimtes.",
   },
   {
     id: 3,
@@ -257,8 +257,8 @@ export const projectData = [
       "/assets/images/Homepage/projects/image1.png",
       "/assets/images/Homepage/projects/image2.png",
     ],
-    title: "Classic Wood Touches Add Charm to Countryside Cottage",
-    desc: "Traditional window frames balance elegance and functionality for timeless appeal.",
+    title: "Klassieke Houten Accenten Geven Sfeer aan Landelijk Huis",
+    desc: "Traditionele raamkozijnen combineren elegantie en functionaliteit voor een tijdloze uitstraling.",
   },
   {
     id: 4,
@@ -266,7 +266,7 @@ export const projectData = [
       "/assets/images/Homepage/projects/image1.png",
       "/assets/images/Homepage/projects/image2.png",
     ],
-    title: "Minimalist Black Frames Bring Elegance to Beachfront Villa",
-    desc: "Expansive glass and minimal frames capture natural light and ocean views.",
+    title: "Minimalistische Zwarte Kozijnen Brengen Luxe in Strandvilla",
+    desc: "Ruime glaspartijen en slanke profielen vangen het natuurlijke licht en uitzicht op zee perfect.",
   },
 ];

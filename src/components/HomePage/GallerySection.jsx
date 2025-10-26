@@ -50,7 +50,7 @@ const GallerySection = () => {
   return (
     <section className="gallery-section" ref={galleryRef}>
       <div className="el-container">
-        <CommonTitle title="Gallery Of " highLight="Elzza" />
+        <CommonTitle title="Galerij van " highLight="Elzza" />
         <div className="bento-grid">
           {bentoGridData.map((item, index) => (
             <div key={item.id} className={`grid-item item-${index + 1}`}>
@@ -61,7 +61,7 @@ const GallerySection = () => {
 
         <div className="button-container">
           <CommonBtn
-            btnText="View Our Gallery"
+            btnText="Bekijk Onze Galerij"
             link="/"
             btnIcon={
               <svg

@@ -79,10 +79,10 @@ const ProductsSection = () => {
     <section ref={sectionRef} className="products-section">
       <div className="el-container">
         <CommonTitle
-          subTitle="Our Products"
-          title="Explore modern and "
-          highLight="classic custom solutions"
-          title2=" for every home."
+          subTitle="Onze Producten"
+          title="Ontdek moderne en "
+          highLight="klassieke maatwerkoplossingen"
+          title2=" voor elk type woning."
         />
         <div className="products-container">
           {productsData?.map((product) => (
@@ -94,7 +94,7 @@ const ProductsSection = () => {
                 <h3 className="title">{product?.title}</h3>
                 <p className="desc">{product?.desc}</p>
                 <CommonBtn
-                  btnText="View Details"
+                  btnText="Bekijk details"
                   link="/"
                   variant="secondary"
                   btnIcon={
@@ -126,20 +126,20 @@ export default ProductsSection;
 export const productsData = [
   {
     id: 1,
-    title: "Window Frames",
-    desc: "Sleek, secure, and energy-efficient – available in multiple styles and finishes.",
+    title: "Raamkozijnen",
+    desc: "Strak, veilig en energiezuinig – verkrijgbaar in verschillende stijlen en afwerkingen.",
     image: "/assets/images/Homepage/product/product1.png",
   },
   {
     id: 2,
-    title: "Glass Doors",
-    desc: "Modern, elegant glass doors to elevate any interior space with clarity and style.",
+    title: "Glazen Deuren",
+    desc: "Moderne, elegante glazen deuren die elke ruimte verfraaien met licht en stijl.",
     image: "/assets/images/Homepage/product/product2.png",
   },
   {
     id: 3,
-    title: "Curtain Walls",
-    desc: "High-performance facades designed for durability, insulation, and aesthetic appeal.",
+    title: "Gordijngevels",
+    desc: "Hoogwaardige gevelsystemen ontworpen voor duurzaamheid, isolatie en esthetiek.",
     image: "/assets/images/Homepage/product/product3.png",
   },
 ];
