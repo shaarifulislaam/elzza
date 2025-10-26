@@ -350,6 +350,11 @@ Hero Section
       .hero-text-block {
         align-items: center;
         gap: 12px;
+        .btn-container {
+          gap: 12px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
         .img-container {
           left: 17%;
           top: -5%;
