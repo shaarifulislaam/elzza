@@ -31,7 +31,7 @@ const WhyChoose = () => {
       // Animate main block image and text
       gsap.fromTo(
         ".why-choose-block .img-container",
-        { opacity: 0, x: -80 },
+        { opacity: 0, x: 0 },
         {
           opacity: 1,
           x: 0,
@@ -47,7 +47,7 @@ const WhyChoose = () => {
 
       gsap.fromTo(
         ".why-choose-block .text-container",
-        { opacity: 0, x: 80 },
+        { opacity: 0, x: 0 },
         {
           opacity: 1,
           x: 0,

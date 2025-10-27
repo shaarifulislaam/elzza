@@ -13,7 +13,7 @@ const ServicesSection = () => {
       // Animate the text block from left
       gsap.fromTo(
         ".service-text-block",
-        { opacity: 0, x: -80 },
+        { opacity: 0, x: 0 },
         {
           opacity: 1,
           x: 0,
@@ -29,7 +29,7 @@ const ServicesSection = () => {
       // Animate image from right
       gsap.fromTo(
         ".services-section .img-container",
-        { opacity: 0, x: 80 },
+        { opacity: 0, x: 0 },
         {
           opacity: 1,
           x: 0,
