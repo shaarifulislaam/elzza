@@ -1,14 +1,6 @@
 .contact-page {
   background: #f5f5f5;
   padding-block: 100px;
-
-  @media (max-width: 768px) {
-    padding-block: 60px;
-  }
-
-  @media (max-width: 480px) {
-    padding-block: 40px;
-  }
 }
 
 // ContactSection.scss

@@ -305,7 +305,6 @@
 }
 @media (max-width: 991px) {
   .why-elzza-section {
-    padding-block: 60px;
     .why-container {
       gap: 30px;
 
@@ -329,7 +328,7 @@
 }
 @media (max-width: 767px) {
   .why-elzza-section {
-    padding-block: 40px;
+    padding-block: 100px;
     .why-container {
       grid-template-columns: 1fr;
 
