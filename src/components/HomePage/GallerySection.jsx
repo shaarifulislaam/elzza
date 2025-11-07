@@ -62,7 +62,7 @@ const GallerySection = () => {
         <div className="button-container">
           <CommonBtn
             btnText="Bekijk Onze Galerij"
-            link="/"
+            link="/gallery"
             btnIcon={
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -132,7 +132,7 @@ export const productCards = [
     docs: [
       {
         id: "brochure",
-        label: "Download Brochure — Classic 6°",
+        label: "Brochure downloaden — Classic 6°",
         href: "/assets/docs/classic-6-brochure.pdf",
         type: "static",
       },
@@ -159,7 +159,7 @@ export const productCards = [
     docs: [
       {
         id: "brochure",
-        label: "Download Brochure — Modern 15°",
+        label: "Brochure downloaden — Modern 15°",
         href: "/assets/docs/modern-15-brochure.pdf",
         type: "static",
       },
@@ -186,7 +186,7 @@ export const productCards = [
     docs: [
       {
         id: "brochure",
-        label: "Download Brochure — City Line",
+        label: "Brochure downloaden — City Line",
         href: "/assets/docs/city-line-brochure.pdf",
         type: "static",
       },
@@ -213,7 +213,7 @@ export const productCards = [
     docs: [
       {
         id: "brochure",
-        label: "Download Brochure — Flat Serie",
+        label: "Brochure downloaden — Flat-serie",
         href: "/assets/docs/flat-brochure.pdf",
         type: "static",
       },

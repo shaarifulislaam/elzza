@@ -53,13 +53,9 @@ const Footer = () => {
                     Over Ons
                   </Link>
                 </li>
+
                 <li>
-                  <Link className="footer-item" href="/services">
-                    Diensten
-                  </Link>
-                </li>
-                <li>
-                  <Link className="footer-item" href="/projects">
+                  <Link className="footer-item" href="/gallery">
                     Projecten
                   </Link>
                 </li>
