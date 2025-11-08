@@ -3,24 +3,19 @@ import React, { useState } from "react";
 import CommonTitle from "./commonElement/CommonTitle";
 
 const GalleryTab = () => {
-  const [activeTab, setActiveTab] = useState("All");
+  const [activeTab, setActiveTab] = useState("Alle");
 
   const tabs = [
-    "All",
-    "Windows",
-    "Doors",
-    "Residential",
-    "Sliding Systems",
-    "Commercial",
+    "Alle",
+    "Ramen",
+    "Deuren",
+    "Residentieel",
+    "Schuifsystemen",
+    "Commercieel",
   ];
 
   const galleryImages = {
-    All: [
-      {
-        id: 1,
-        image: "/assets/images/galleryPage/gallery-1.png",
-        title: "Modern Lake House",
-      },
+    Alle: [
       {
         id: 2,
         image: "/assets/images/galleryPage/gallery-2.png",
@@ -47,11 +42,7 @@ const GalleryTab = () => {
         image: "/assets/images/galleryPage/gallery-6.png",
         title: "City View Office",
       },
-      {
-        id: 7,
-        image: "/assets/images/galleryPage/gallery-7.png",
-        title: "City View Office",
-      },
+
       {
         id: 8,
         image: "/assets/images/galleryPage/gallery-8.png",
@@ -73,7 +64,7 @@ const GalleryTab = () => {
         title: "City View Office",
       },
     ],
-    Windows: [
+    Ramen: [
       {
         id: 1,
         image: "/assets/images/galleryPage/gallery-2.png",
@@ -85,12 +76,7 @@ const GalleryTab = () => {
         title: "Bedroom Windows",
       },
     ],
-    Doors: [
-      {
-        id: 2,
-        image: "/assets/images/galleryPage/gallery-7.png",
-        title: "Entry Door",
-      },
+    Deuren: [
       {
         id: 5,
         image: "/assets/images/galleryPage/gallery-3.png",
@@ -102,7 +88,7 @@ const GalleryTab = () => {
         title: "Sliding Doors",
       },
     ],
-    Residential: [
+    Residentieel: [
       {
         id: 1,
         image: "/assets/images/galleryPage/gallery-6.png",
@@ -119,7 +105,7 @@ const GalleryTab = () => {
         title: "Dining Room View",
       },
     ],
-    "Sliding Systems": [
+    Schuifsystemen: [
       {
         id: 5,
         image: " /assets/images/galleryPage/gallery-9.png",
@@ -131,7 +117,7 @@ const GalleryTab = () => {
         title: "Modern Sliding Doors",
       },
     ],
-    Commercial: [
+    Commercieel: [
       {
         id: 6,
         image: "/assets/images/galleryPage/gallery-6.png",
@@ -145,11 +131,6 @@ const GalleryTab = () => {
       {
         id: 2,
         image: "/assets/images/galleryPage/gallery-8.png",
-        title: "Commercial Space",
-      },
-      {
-        id: 3,
-        image: "/assets/images/galleryPage/gallery-7.png",
         title: "Commercial Space",
       },
     ],
@@ -183,12 +164,15 @@ const GalleryTab = () => {
               <div key={item.id} className="gallery-item">
                 <img src={item.image} alt={item.title} />
                 <div className="gallery-overlay">
-                  <div className="name">Project Name: Modern Lake House</div>
-                  <div className="name">Location: Utrecht, Netherlands</div>
                   <div className="name">
-                    Description: A perfect blend of sleek black frames and wide
-                    glass panels. Elzza’s sliding doors bring panoramic views
-                    and natural light into this modern retreat.
+                    Projectnaam: Moderne Woning aan het Meer
+                  </div>
+                  <div className="name">Locatie: Utrecht, Nederland</div>
+                  <div className="name">
+                    Beschrijving: Een perfecte combinatie van strakke zwarte
+                    kozijnen en brede glazen panelen. De schuifdeuren van Elzza
+                    brengen panoramisch uitzicht en natuurlijk licht in dit
+                    moderne toevluchtsoord.
                   </div>
                 </div>
               </div>
