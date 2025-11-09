@@ -75,24 +75,17 @@ const LogoSliderSection = () => {
 export default LogoSliderSection;
 
 export const sliderData = [
-  { id: 1, path: "/assets/images/Homepage/c1.png" },
-  { id: 2, path: "/assets/images/Homepage/c2.png" },
   { id: 3, path: "/assets/images/Homepage/c3.png" },
-  { id: 4, path: "/assets/images/Homepage/c4.png" },
   { id: 5, path: "/assets/images/Homepage/c5.png" },
   { id: 6, path: "/assets/images/Homepage/c6.png" },
   { id: 7, path: "/assets/images/Homepage/c7.png" },
-  { id: 8, path: "/assets/images/Homepage/c1.png" },
-  { id: 9, path: "/assets/images/Homepage/c2.png" },
+
   { id: 10, path: "/assets/images/Homepage/c3.png" },
-  { id: 11, path: "/assets/images/Homepage/c4.png" },
   { id: 12, path: "/assets/images/Homepage/c5.png" },
   { id: 13, path: "/assets/images/Homepage/c6.png" },
   { id: 14, path: "/assets/images/Homepage/c7.png" },
-  { id: 15, path: "/assets/images/Homepage/c1.png" },
-  { id: 16, path: "/assets/images/Homepage/c2.png" },
+
   { id: 17, path: "/assets/images/Homepage/c3.png" },
-  { id: 18, path: "/assets/images/Homepage/c4.png" },
   { id: 19, path: "/assets/images/Homepage/c5.png" },
   { id: 20, path: "/assets/images/Homepage/c6.png" },
 ];

@@ -40,7 +40,7 @@ const TopBar = () => {
               />
             </svg>
           </span>
-          <span className="text-block">Gratis inmeetservice</span>
+          <span className="text-block">Eigen productie</span>
         </div>
       </div>
     </>
