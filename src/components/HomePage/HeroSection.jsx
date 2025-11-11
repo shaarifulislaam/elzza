@@ -71,15 +71,15 @@ const HeroSection = () => {
 
     return () => ctx.revert(); // cleanup on unmount
   }, []);
-  useEffect(() => {
-    gsap.to(".hero-img-block", {
-      y: "+=15",
-      duration: 3,
-      ease: "sine.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.to(".hero-img-block", {
+  //     y: "+=15",
+  //     duration: 3,
+  //     ease: "sine.inOut",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
+  // }, []);
 
   return (
     <section className="hero-section">

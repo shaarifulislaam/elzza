@@ -14,7 +14,7 @@ const HeroSectionSlider = () => {
   const images = [
     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
     "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+    "/assets/images/Homepage/heroImage3.jpg",
     "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
   ];
   return (

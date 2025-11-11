@@ -5,6 +5,12 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+// 🧩 Swiper Imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation, Autoplay } from "swiper/modules";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const VisionSection = () => {
@@ -39,7 +45,7 @@ const VisionSection = () => {
       });
     }, sectionRef);
 
-    return () => ctx.revert(); // cleanup on unmount
+    return () => ctx.revert(); // cleanup
   }, []);
 
   return (
@@ -60,8 +66,26 @@ const VisionSection = () => {
               ref={(el) => (cardsRef.current[index] = el)}
               aria-labelledby={`${card.id}-title`}
             >
+              {/* 🧩 Swiper Slider */}
               <div className="img-container">
-                <img src={card.image} alt={card.title} loading="lazy" />
+                <Swiper
+                  modules={[Navigation]}
+                  navigation
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  loop={true}
+                  className="product-swiper"
+                >
+                  {card.images.map((img, i) => (
+                    <SwiperSlide key={i}>
+                      <img
+                        src={img}
+                        alt={`${card.title} ${i + 1}`}
+                        loading="lazy"
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
 
               <header className="card-head">
@@ -122,30 +146,32 @@ const VisionSection = () => {
 
 export default VisionSection;
 
+// 🧩 Product Data
 export const productCards = [
   {
     id: "classic-6",
     title: "Schüco Verdiept 6°",
     subtitle: "Rechte Vormgeving en 100% de Esthetiek van Hout",
-    image: "/assets/images/Homepage/vision/1.png",
+    images: [
+      "/assets/images/Homepage/vision/1.png",
+      "/assets/images/Homepage/vision/2.png",
+      "/assets/images/Homepage/vision/3.png",
+    ],
     docs: [
       {
         id: "brochure",
         label: "Brochure Schüco Verdiept 1",
         href: "/assets/docs/LivIng-Variant-1.pdf",
-        type: "static",
       },
       {
         id: "profile",
         label: "Brochure Schüco Vlak 1",
         href: "/assets/docs/1-Brochure-Schuco-Vlak.pdf",
-        type: "static",
       },
       {
         id: "care",
         label: "Schüco LivIng Variant Profielsysteem",
         href: "/assets/docs/Brochure-Schuco-LivIng-Variant-Profielsysteem-gecomprimeerd.pdf",
-        type: "static",
       },
     ],
   },
@@ -153,19 +179,20 @@ export const productCards = [
     id: "modern-15",
     title: "Schüco Verdiept 15°",
     subtitle: "Schuine Vormgeving en Slank Aangezicht",
-    image: "/assets/images/Homepage/vision/1.png",
+    images: [
+      "/assets/images/Homepage/vision/1.png",
+      "/assets/images/Homepage/vision/2.png",
+    ],
     docs: [
       {
         id: "brochure",
         label: "Brochure Schüco Verdiept 2",
         href: "/assets/docs/LivIng-Variant-1.pdf",
-        type: "static",
       },
       {
         id: "install",
         label: "Brochure Schüco Vlak 2",
         href: "/assets/docs/1-Brochure-Schuco-Vlak2.pdf",
-        type: "static",
       },
     ],
   },
@@ -173,19 +200,20 @@ export const productCards = [
     id: "city-line",
     title: "Schüco City",
     subtitle: "Rechte Vormgeving en Uitstraling van Historisch Schuifraam",
-    image: "/assets/images/Homepage/vision/1.png",
+    images: [
+      "/assets/images/Homepage/vision/1.png",
+      "/assets/images/Homepage/vision/2.png",
+    ],
     docs: [
       {
         id: "brochure",
         label: "Brochure Schüco Verdiept 3",
         href: "/assets/docs/LivIng-Variant-3.pdf",
-        type: "static",
       },
       {
         id: "profile",
         label: "Onderhoudsvoorschriften",
         href: "/assets/docs/Onderhoudsvoorschriften-Schuco.pdf",
-        type: "static",
       },
     ],
   },
@@ -193,19 +221,20 @@ export const productCards = [
     id: "flat",
     title: "Schüco Vlak",
     subtitle: "Strak en Modern Ontwerp",
-    image: "/assets/images/Homepage/vision/1.png",
+    images: [
+      "/assets/images/Homepage/vision/1.png",
+      "/assets/images/Homepage/vision/3.png",
+    ],
     docs: [
       {
         id: "brochure",
         label: "Brochure Schüco Verdiept 4",
         href: "/assets/docs/LivIng-Variant-4.pdf",
-        type: "static",
       },
       {
         id: "install",
         label: "Onderhoudsvoorschriften 2",
         href: "/assets/docs/Onderhoudsvoorschriften-Schuco-Verkort.pdf",
-        type: "static",
       },
     ],
   },
