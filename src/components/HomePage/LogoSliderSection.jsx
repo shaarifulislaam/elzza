@@ -88,4 +88,10 @@ export const sliderData = [
   { id: 17, path: "/assets/images/Homepage/c3.png" },
   { id: 19, path: "/assets/images/Homepage/c5.png" },
   { id: 20, path: "/assets/images/Homepage/c6.png" },
+  { id: 21, path: "/assets/images/Homepage/c6.png" },
+  { id: 22, path: "/assets/images/Homepage/c7.png" },
+
+  { id: 23, path: "/assets/images/Homepage/c3.png" },
+  { id: 24, path: "/assets/images/Homepage/c5.png" },
+  { id: 25, path: "/assets/images/Homepage/c6.png" },
 ];
