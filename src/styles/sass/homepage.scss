@@ -1614,9 +1614,63 @@ Vision Section
     }
 
     .img-container {
+      position: relative;
       margin-bottom: 12px;
-      img {
+
+      .product-swiper {
         border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .nav-buttons {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateY(-50%);
+        pointer-events: none; // allow clicks only on buttons
+        z-index: 9;
+        .nav-btn {
+          pointer-events: all;
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+          background: $primary; // light blue for inactive
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: #1857d8;
+            color: #fff;
+          }
+
+          &:disabled {
+            background: rgba(176, 181, 199, 0.3);
+            color: #33416d;
+            cursor: not-allowed;
+          }
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+
+          &.nav-prev {
+            margin-left: 6px;
+          }
+
+          &.nav-next {
+            margin-right: 6px;
+          }
+        }
       }
     }
 
