@@ -70,11 +70,11 @@ const Footer = () => {
             <div className="footer-column">
               <h4 className="footer-title">Onze Producten</h4>
               <ul className="footer-list">
-                <li className="footer-item">Aluminium Ramen</li>
+                <li className="footer-item">Kunststof Kozijnen</li>
                 <li className="footer-item">Schuifdeuren</li>
                 <li className="footer-item">Voordeuren</li>
-                <li className="footer-item">Vouwsystemen</li>
-                <li className="footer-item">Glazen Gevels</li>
+
+                <li className="footer-item">kunststof gevels</li>
               </ul>
             </div>
           </div>
@@ -84,11 +84,8 @@ const Footer = () => {
             <h4 className="footer-title">Contacteer Ons</h4>{" "}
             <p className="contact-info">
               {" "}
-              <Link
-                href="tel:+31201234567"
-                aria-label="Call Elzza at +31 20 123 4567"
-              >
-                +31 (0)20 123 4567
+              <Link href="tel:0752102002" aria-label="Call Elzza at 0752102002">
+                0752102002
               </Link>
             </p>
             <p className="contact-info">
@@ -101,8 +98,8 @@ const Footer = () => {
               className="
               contact-info"
             >
-              Elzza Netherlands <br />
-              1234 AB Amsterdam, The Netherlands
+              Ampèrestraat 54 <br />
+              1446 TS Purmerend
             </p>
           </div>
         </div>

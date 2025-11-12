@@ -18,10 +18,11 @@ const HomePage = () => {
       <ProductsSection />
       <ServicesSection />
       <WhyChoose />
+      <GallerySection />
       {/* <ProjectsSection /> */}
       <VisionSection />
       <ReviewSection />
-      <GallerySection />
+
       <Blogs />
     </>
   );

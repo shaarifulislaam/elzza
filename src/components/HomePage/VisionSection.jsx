@@ -153,9 +153,8 @@ export const productCards = [
     title: "Schüco Verdiept 6°",
     subtitle: "Rechte Vormgeving en 100% de Esthetiek van Hout",
     images: [
-      "/assets/images/Homepage/vision/1.png",
-      "/assets/images/Homepage/vision/2.png",
-      "/assets/images/Homepage/vision/3.png",
+      "/assets/images/Homepage/vision/1_1.jpg",
+      "/assets/images/Homepage/vision/1_2.jpg",
     ],
     docs: [
       {
@@ -180,8 +179,8 @@ export const productCards = [
     title: "Schüco Verdiept 15°",
     subtitle: "Schuine Vormgeving en Slank Aangezicht",
     images: [
-      "/assets/images/Homepage/vision/1.png",
-      "/assets/images/Homepage/vision/2.png",
+      "/assets/images/Homepage/vision/2_1.jpg",
+      "/assets/images/Homepage/vision/2_2.jpg",
     ],
     docs: [
       {
@@ -201,8 +200,8 @@ export const productCards = [
     title: "Schüco City",
     subtitle: "Rechte Vormgeving en Uitstraling van Historisch Schuifraam",
     images: [
-      "/assets/images/Homepage/vision/1.png",
-      "/assets/images/Homepage/vision/2.png",
+      "/assets/images/Homepage/vision/3_1.jpg",
+      "/assets/images/Homepage/vision/3_2.jpg",
     ],
     docs: [
       {
@@ -222,8 +221,8 @@ export const productCards = [
     title: "Schüco Vlak",
     subtitle: "Strak en Modern Ontwerp",
     images: [
-      "/assets/images/Homepage/vision/1.png",
-      "/assets/images/Homepage/vision/3.png",
+      "/assets/images/Homepage/vision/4_1.jpg",
+      "/assets/images/Homepage/vision/4_2.jpg",
     ],
     docs: [
       {

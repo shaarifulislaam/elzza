@@ -70,12 +70,10 @@ const ServicesSection = () => {
       <div className="el-container">
         <div className="services-container">
           <div className="service-text-block">
-            <div className="title">
-              Uw betrouwbare partner voor kwaliteit en precisie
-            </div>
+            <div className="title">Uw partner in kwaliteit en precisie</div>
             <div className="text">
-              Wij combineren vakmanschap, innovatie en duurzaamheid om ramen- en
-              deuroplossingen te leveren die een leven lang meegaan.
+              Wij leveren ramen, deuren en schuifpuien met een moderne
+              uitstraling, duurzame prestaties en hoogwaardige afwerking.
             </div>
 
             <div className="service-list-container">
@@ -108,25 +106,25 @@ export const servicesData = [
   {
     id: 1,
     title: "Vakmanschap & Kwaliteit",
-    text: "Elk kozijn wordt met precisie en hoogwaardige materialen vervaardigd.",
+    text: "Wij werken met hoogwaardige materialen en zijn officieel dealer van Schüco. Zo bent u verzekerd van topkwaliteit en een perfect eindresultaat.",
     icon: "/assets/images/Homepage/services/service1.svg",
   },
   {
     id: 2,
-    title: "Innovatief Design",
-    text: "De perfecte balans tussen esthetiek en functionaliteit voor modern wonen.",
+    title: "Modern & Tijdloos Design",
+    text: "Strakke lijnen, slimme details en een stijlvolle afwerking die past bij elke moderne woonstijl.",
     icon: "/assets/images/Homepage/services/service2.svg",
   },
   {
     id: 3,
-    title: "Duurzame Materialen",
-    text: "Milieuvriendelijke producten ontworpen voor langdurige prestaties.",
+    title: "Duurzaam & Energiezuinig",
+    text: "Onze oplossingen zijn milieuvriendelijk en ontworpen voor optimale isolatie en langdurige prestaties.",
     icon: "/assets/images/Homepage/services/service3.svg",
   },
   {
     id: 4,
-    title: "Professionele Installatie",
-    text: "Met precisie geplaatst voor maximale duurzaamheid en betrouwbaarheid.",
+    title: "Professionele Montage",
+    text: "Onze installateurs werken nauwkeurig en met vakkennis. Dit zorgt voor optimale duurzaamheid, veiligheid en betrouwbaarheid.",
     icon: "/assets/images/Homepage/services/service4.svg",
   },
 ];

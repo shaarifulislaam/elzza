@@ -32,27 +32,28 @@ const Navbar = () => {
     {
       icon: "/assets/images/door-1.webp",
       icon_hover: "/assets/images/menu-1.gif",
-      title: "Window Frames",
+      title: "Raamkozijnen",
       description:
-        "Sleek, Secure, Energy-Efficient, Available In Various Styles",
+        "Slank, Veilig, Energiezuinig, Verkrijgbaar in Verschillende Stijlen",
     },
     {
       icon: "/assets/images/door-2.webp",
       icon_hover: "/assets/images/menu-2.gif",
-      title: "Door Frames",
-      description: "Elegant Designs That Blend Strength, Safety, And Style",
+      title: "Deurkozijnen",
+      description:
+        "Elegante Ontwerpen die Kracht, Veiligheid en Stijl Combineren",
     },
     {
       icon: "/assets/images/door-3.webp",
       icon_hover: "/assets/images/menu-3.gif",
-      title: "Sliding Door Systems",
-      description: "Bring In Light And Space With Our Premium Sliding Doors",
+      title: "Schuifdeursystemen",
+      description: "Breng Licht en Ruimte Binnen met Onze Premium Schuifdeuren",
     },
     {
       icon: "/assets/images/door-4.webp",
       icon_hover: "/assets/images/menu-4.gif",
-      title: "Custom Sizes & Finishes",
-      description: "Choose Materials, Handles, And Frame Colors",
+      title: "Aangepaste Maten & Afwerkingen",
+      description: "Kies Materialen, Handgrepen en Framekleuren",
     },
   ];
 
