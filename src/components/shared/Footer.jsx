@@ -60,8 +60,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-item" href="/blog">
-                    Blog
+                  <Link className="footer-item" href="/contact">
+                    Contact
                   </Link>
                 </li>
               </ul>

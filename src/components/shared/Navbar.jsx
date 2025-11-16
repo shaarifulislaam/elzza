@@ -33,6 +33,7 @@ const Navbar = () => {
       icon: "/assets/images/door-1.webp",
       icon_hover: "/assets/images/menu-1.gif",
       title: "Raamkozijnen",
+      link: "/products/kozijnen",
       description:
         "Slank, Veilig, Energiezuinig, Verkrijgbaar in Verschillende Stijlen",
     },
@@ -40,13 +41,15 @@ const Navbar = () => {
       icon: "/assets/images/door-2.webp",
       icon_hover: "/assets/images/menu-2.gif",
       title: "Deurkozijnen",
+      link: "/products/deuren",
       description:
         "Elegante Ontwerpen die Kracht, Veiligheid en Stijl Combineren",
     },
     {
       icon: "/assets/images/door-3.webp",
       icon_hover: "/assets/images/menu-3.gif",
-      title: "Schuifdeursystemen",
+      link: "/products/schuifpuien",
+      title: "Schuifpuien",
       description: "Breng Licht en Ruimte Binnen met Onze Premium Schuifdeuren",
     },
     {
@@ -54,6 +57,7 @@ const Navbar = () => {
       icon_hover: "/assets/images/menu-4.gif",
       title: "Aangepaste Maten & Afwerkingen",
       description: "Kies Materialen, Handgrepen en Framekleuren",
+      link: "/get-quote",
     },
   ];
 
@@ -187,7 +191,11 @@ const Navbar = () => {
                 >
                   <div className="mega-menu-content">
                     {productItems.map((item, index) => (
-                      <Link href="#" key={index} className="mega-menu-item">
+                      <Link
+                        href={item.link}
+                        key={index}
+                        className="mega-menu-item"
+                      >
                         <div className="mega-menu-icon">
                           <img
                             src={item.icon}

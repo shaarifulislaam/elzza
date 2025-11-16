@@ -1230,7 +1230,7 @@ review Section
             height: 100%;
             display: flex;
             flex-direction: column;
-            padding-bottom: 60px;
+            padding-bottom: 20px;
             .review-title {
               color: $primary;
 
@@ -1593,7 +1593,8 @@ Vision Section
 *
 *
 */
-.vision-section {
+.vision-section,
+.product-vision-section {
   padding-block: 75px;
   .product-grid {
     display: grid;
@@ -1760,7 +1761,8 @@ Vision Section
   }
 }
 @media (max-width: 991px) {
-  .vision-section {
+  .vision-section,
+  .product-vision-section {
     padding-block: 60px;
     .product-grid {
       grid-template-columns: repeat(4, minmax(230px, 1fr));

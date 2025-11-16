@@ -96,7 +96,7 @@ const ProductsSection = () => {
                 <p className="desc">{product?.desc}</p>
                 <CommonBtn
                   btnText="Bekijk details"
-                  link="/"
+                  link={product.link}
                   variant="secondary"
                   btnIcon={
                     <svg
