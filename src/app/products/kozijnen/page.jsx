@@ -22,40 +22,40 @@ const FramesPages = () => {
       <CommonProductDesc
         leftImg={false}
         image={false}
-        descriptionData={doorsHandleData.descriptionData}
-        productDescTitle={doorsHandleData.sectionTitle}
-        sliderImages={doorsHandleData.sliderImages}
+        descriptionData={cornerData.descriptionData}
+        productDescTitle={cornerData.sectionTitle}
+        sliderImages={cornerData.sliderImages}
       />
       <CommonProductDesc
         leftImg={true}
         image={true}
-        descriptionData={doorFittings.descriptionData}
-        productDescTitle={doorFittings.sectionTitle}
-        sliderImages={doorFittings.sliderImages}
+        descriptionData={colorData.descriptionData}
+        productDescTitle={colorData.sectionTitle}
+        sliderImages={colorData.sliderImages}
       />
 
       <CommonProductDesc
         leftImg={false}
         image={false}
-        descriptionData={hingesData.descriptionData}
-        productDescTitle={hingesData.sectionTitle}
-        sliderImages={hingesData.sliderImages}
+        descriptionData={handlesData.descriptionData}
+        productDescTitle={handlesData.sectionTitle}
+        sliderImages={handlesData.sliderImages}
       />
 
       <CommonProductDesc
         leftImg={true}
         image={false}
-        descriptionData={thresholdsData.descriptionData}
-        productDescTitle={thresholdsData.sectionTitle}
-        sliderImages={thresholdsData.sliderImages}
+        descriptionData={windowHardwareData.descriptionData}
+        productDescTitle={windowHardwareData.sectionTitle}
+        sliderImages={windowHardwareData.sliderImages}
       />
-      <CommonProductDesc
+      {/* <CommonProductDesc
         leftImg={false}
         image={false}
         descriptionData={thresholdsData.descriptionData}
         productDescTitle={thresholdsData.sectionTitle}
         sliderImages={thresholdsData.sliderImages}
-      />
+      /> */}
       <ReviewSection />
       <Blogs />
     </>
@@ -63,87 +63,49 @@ const FramesPages = () => {
 };
 
 export default FramesPages;
-export const doorsHandleData = {
-  sectionTitle: "Raamkozünen",
+export const cornerData = {
+  sectionTitle: "Hoekverbindingen",
   descriptionData: [
     {
-      title: "Front door fittings Standard",
-      desc: "Pusher 740 SKG*** + Handle 2018 Aluminium",
+      title: "90° Hoekverbinding Buiten- & Binnenzijde",
+      desc: "",
     },
     {
-      title: "Rear door fittings Standard",
-      desc: "Handle 2018 SKG*** + Handle 2018 Aluminium",
+      title: "90° Hoekverbinding Buiten & 45° Binnen",
+      desc: "",
     },
     {
-      title: "Alternative grips SKG*** Aluminium",
-      desc: "Stainless steel / Black / Graphite / Brass / Bronze",
+      title: "45° Hoekverbinding Buiten- & Binnenzijde",
+      desc: "",
+    },
+  ],
+  sliderImages: [
+    "/assets/images/productPage/framePage/corner.jpg",
+    "/assets/images/productPage/framePage/corner.jpg",
+  ],
+};
+export const colorData = {
+  sectionTitle: "Kleuren",
+  descriptionData: [
+    {
+      title: "Profielen zonder Houtnerf – Wit & Créme",
+      desc: "",
     },
     {
-      title: "Alternative rod grips SKG***",
-      desc: "550mm / 950mm / 1100mm / 1800mm Stainless steel",
+      title: "Profielen met Houtnerf",
+      desc: "",
     },
     {
-      title: "Brochure Door handles",
+      title: "Profielen met Automotive Finish",
+      desc: "",
+    },
+    {
+      title: "Brochure Schüco Houtnerf",
       isBrochure: true,
-      href: "/assets/docs/LivIng-Variant-1.pdf",
-    },
-  ],
-  sliderImages: [
-    "/assets/images/productPage/handle.png",
-    "/assets/images/productPage/fittings.png",
-  ],
-};
-export const doorFittings = {
-  sectionTitle: "Door Fittings",
-  descriptionData: [
-    {
-      title: "Fair Three-point lock SKG***",
-      desc: "Fair Three-point lock SKG*** Autolock",
+      href: "/assets/docs/Threshold-Brochure.pdf",
     },
     {
-      title: "Cylinder for door",
-      desc: "Incl. 3 x keys",
-    },
-    {
-      title: "Order your door",
-      desc: "Inwards & Outwards",
-    },
-    {
-      title: "Order your door with",
-      desc: "Inside & Outside handles",
-    },
-  ],
-  sliderImages: [
-    "/assets/images/productPage/handle.png",
-    "/assets/images/productPage/fittings.png",
-  ],
-};
-export const hingesData = {
-  sectionTitle: "Hinges",
-  descriptionData: [
-    {
-      title: "Seelis Surface mounted hinges SKG***",
-      desc: "White / Cream / Aluminum color frame",
-    },
-  ],
-  sliderImages: [
-    "/assets/images/productPage/handle.png",
-    "/assets/images/productPage/fittings.png",
-  ],
-};
-export const thresholdsData = {
-  sectionTitle: "Thresholds",
-  descriptionData: [
-    {
-      title: "Grounded/Low Aluminium Threshold",
-      desc: "Black",
-    },
-    {
-      title: "Elevated Threshold",
-      desc: "Black / Aluminum",
-    },
-    {
-      title: "Brochure: Aluminium Threshold",
+      title: "Brochure Schüco Automotive Finish ",
       isBrochure: true,
       href: "/assets/docs/Threshold-Brochure.pdf",
     },
@@ -151,5 +113,62 @@ export const thresholdsData = {
   sliderImages: [
     "/assets/images/productPage/handle.png",
     "/assets/images/productPage/fittings.png",
+  ],
+};
+export const handlesData = {
+  sectionTitle: "Raamgrepen",
+  descriptionData: [
+    {
+      title: "Hoppe Secustik SKG** Afsluitbaar",
+      desc: "Wit / Créme / Aluminium / Zwart",
+    },
+    {
+      title: "Hoppe niet Afsluitbaar",
+      desc: "Wit / Créme / Aluminium",
+    },
+    {
+      title: "AXA Uitzetter",
+      desc: "Aluminium",
+    },
+    {
+      title: "Verkropte Greep SKG** Afsluitbaar (buitendraaiend)",
+      desc: "Aluminium",
+    },
+    {
+      title: "Geze OL90 Verlaagd Beslag",
+      desc: "Aluminium",
+    },
+    {
+      title: "Brochure Hoppe Secustik Raamgreep",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
+    },
+    {
+      title: "Brochure Geze OL90",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
+    },
+  ],
+  sliderImages: [
+    "/assets/images/productPage/framePage/handle1.jpg",
+
+    "/assets/images/productPage/framePage/handle2.jpg",
+  ],
+};
+export const windowHardwareData = {
+  sectionTitle: "Raambeslag",
+  descriptionData: [
+    {
+      title: "ROTO NT SKG**",
+      desc: "BlackVoorzien van Zomer & Winterstand Zichtbare scharnieren",
+    },
+    {
+      title: "ROTO NT Designo SKG**",
+      desc: "Voorzien van Zomer & Winterstand Onzichtbare scharnieren",
+    },
+  ],
+  sliderImages: [
+    "/assets/images/productPage/framePage/windowFitting1.jpg",
+    "/assets/images/productPage/framePage/windowFitting2.jpg",
   ],
 };

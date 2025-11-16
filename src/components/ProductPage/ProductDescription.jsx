@@ -11,7 +11,6 @@ const ProductDescription = ({ listItem, productDescTitle }) => {
           !item.isBrochure ? (
             <li className="list-item" key={index}>
               <span className="icon">
-                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
@@ -38,57 +37,54 @@ const ProductDescription = ({ listItem, productDescTitle }) => {
                   </defs>
                 </svg>
               </span>
+
               <span className="text">
                 <span className="title">{item.title}</span>
                 {item.desc && <div className="desc">{item.desc}</div>}
               </span>
             </li>
           ) : (
-            <div key={index} className="download-block">
-              <div className="doc-row">
-                <Link
-                  className="doc-link"
-                  href={item.href}
-                  download
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title=""
-                  aria-label=""
-                >
-                  <span>
-                    {" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="19"
-                      height="18"
-                      viewBox="0 0 19 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M15.4662 17V12.9322H17.5001M16.8221 14.9661H15.4662M6.65263 17V12.9322M6.65263 12.9322H8.00856C8.57023 12.9322 9.02551 13.3875 9.02551 13.9491C9.02551 14.5108 8.57023 14.9661 8.00856 14.9661H6.65263V12.9322ZM7.60178 6.42382V10.4916M7.60178 10.4916L6.24585 9.13565M7.60178 10.4916L8.95772 9.13565M13.7035 10.4916V5.06787M12.0764 17H11.0594V12.9322H12.0764C12.8252 12.9322 13.4323 13.5393 13.4323 14.2881V15.644C13.4323 16.3929 12.8252 17 12.0764 17Z"
-                        stroke="#1857D8"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M9.6356 1H2.85593C2.10709 1 1.5 1.60708 1.5 2.35591V15.6439C1.5 16.3927 2.10709 16.9998 2.85593 16.9998H4.21187M9.6356 1V3.71183C9.6356 4.46067 10.2427 5.06774 10.9915 5.06774H13.7034L9.6356 1Z"
-                        stroke="#1857D8"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                  <span className="doc-label">{item.title}</span>
-                </Link>
-              </div>
-            </div>
+            // FIX: brochure also returned as <li>
+            <li className="download-block" key={index}>
+              <Link
+                className="doc-link"
+                href={item.href}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="18"
+                    viewBox="0 0 19 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.4662 17V12.9322H17.5001M16.8221 14.9661H15.4662M6.65263 17V12.9322M6.65263 12.9322H8.00856C8.57023 12.9322 9.02551 13.3875 9.02551 13.9491C9.02551 14.5108 8.57023 14.9661 8.00856 14.9661H6.65263V12.9322ZM7.60178 6.42382V10.4916M7.60178 10.4916L6.24585 9.13565M7.60178 10.4916L8.95772 9.13565M13.7035 10.4916V5.06787M12.0764 17H11.0594V12.9322H12.0764C12.8252 12.9322 13.4323 13.5393 13.4323 14.2881V15.644C13.4323 16.3929 12.8252 17 12.0764 17Z"
+                      stroke="#1857D8"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M9.6356 1H2.85593C2.10709 1 1.5 1.60708 1.5 2.35591V15.6439C1.5 16.3927 2.10709 16.9998 2.85593 16.9998H4.21187M9.6356 1V3.71183C9.6356 4.46067 10.2427 5.06774 10.9915 5.06774H13.7034L9.6356 1Z"
+                      stroke="#1857D8"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+
+                <span className="doc-label">{item.title}</span>
+              </Link>
+            </li>
           )
         )}
       </ul>
+
       <CommonBtn
         btnText="Ontvang een gratis offerte"
         link="/get-quote"

@@ -175,7 +175,6 @@
           }
         }
         .download-block {
-          margin-bottom: 24px;
           .doc-row {
             display: flex;
           }
@@ -213,6 +212,10 @@
       }
       .img-container {
         position: relative;
+        img {
+          max-height: 650px;
+          width: 100%;
+        }
       }
       .slide-img img {
         width: 100%;
