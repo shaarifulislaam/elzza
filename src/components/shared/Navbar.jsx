@@ -293,7 +293,7 @@ const Navbar = () => {
                 >
                   {productItems.map((item, index) => (
                     <Link
-                      href="#"
+                      href={item.link}
                       key={index}
                       className="mobile-mega-item"
                       onClick={() => setIsNavOpen(false)}
@@ -341,6 +341,9 @@ const Navbar = () => {
                 >
                   Contact
                 </Link>
+              </li>
+              <li className="menu-item">
+                <CommonBtn btnText="Offerte Aanvragen" link={"/get-quote"} />
               </li>
             </ul>
           </div>
