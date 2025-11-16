@@ -49,13 +49,20 @@ const FramesPages = () => {
         productDescTitle={windowHardwareData.sectionTitle}
         sliderImages={windowHardwareData.sliderImages}
       />
-      {/* <CommonProductDesc
+      <CommonProductDesc
         leftImg={false}
         image={false}
-        descriptionData={thresholdsData.descriptionData}
-        productDescTitle={thresholdsData.sectionTitle}
-        sliderImages={thresholdsData.sliderImages}
-      /> */}
+        descriptionData={hingesData.descriptionData}
+        productDescTitle={hingesData.sectionTitle}
+        sliderImages={hingesData.sliderImages}
+      />
+      <CommonProductDesc
+        leftImg={true}
+        image={false}
+        descriptionData={sillsData.descriptionData}
+        productDescTitle={sillsData.sectionTitle}
+        sliderImages={sillsData.sliderImages}
+      />
       <ReviewSection />
       <Blogs />
     </>
@@ -170,5 +177,45 @@ export const windowHardwareData = {
   sliderImages: [
     "/assets/images/productPage/framePage/windowFitting1.jpg",
     "/assets/images/productPage/framePage/windowFitting2.jpg",
+  ],
+};
+export const hingesData = {
+  sectionTitle: "Scharnieren",
+  descriptionData: [
+    {
+      title: "Schüco Opbouw Scharnieren SKG**",
+      desc: "Wit / Créme / Aluminium / Kleur Kozijn",
+    },
+  ],
+  sliderImages: [
+    "/assets/images/productPage/framePage/hings1.jpg",
+    "/assets/images/productPage/framePage/hings2.jpg",
+  ],
+};
+export const sillsData = {
+  sectionTitle: "Onderdorpels",
+  descriptionData: [
+    {
+      title: "Grundmeijer Aluminium Onderdorpel",
+      desc: "Zwart",
+    },
+    {
+      title: "Bluestone Onderdorpel",
+      desc: "Zwart / Blauwsteen",
+    },
+    {
+      title: "Brochure Bluestone Onderdorpel",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
+    },
+    {
+      title: "Brochure Grundmeyer ",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
+    },
+  ],
+  sliderImages: [
+    "/assets/images/productPage/framePage/sills1.jpg",
+    "/assets/images/productPage/framePage/sills2.jpg",
   ],
 };
