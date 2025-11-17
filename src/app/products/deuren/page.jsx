@@ -16,8 +16,6 @@ const DoorPage = () => {
         image={heroImg.img}
       />
 
-      <ProductVision />
-
       <CommonProductDesc
         leftImg={false}
         image={false}
@@ -48,6 +46,13 @@ const DoorPage = () => {
         productDescTitle={thresholdsData.sectionTitle}
         sliderImages={thresholdsData.sliderImages}
       />
+      <CommonProductDesc
+        leftImg={false}
+        image={false}
+        descriptionData={doorsData.descriptionData}
+        productDescTitle={doorsData.sectionTitle}
+        sliderImages={doorsData.sliderImages}
+      />
       <ReviewSection />
       <Blogs />
     </>
@@ -59,23 +64,23 @@ export const doorsHandleData = {
   sectionTitle: "Deurgrepen",
   descriptionData: [
     {
-      title: "Front door fittings Standard",
-      desc: "Pusher 740 SKG*** + Handle 2018 Aluminium",
+      title: "Voordeurbeslag Standaard",
+      desc: "Pusher 740 SKG*** + Greep 2018 Aluminium",
     },
     {
-      title: "Rear door fittings Standard",
-      desc: "Handle 2018 SKG*** + Handle 2018 Aluminium",
+      title: "Achterdeurbeslag Standaard",
+      desc: "Greep 2018 SKG*** + Greep 2018 Aluminium",
     },
     {
-      title: "Alternative grips SKG*** Aluminium",
-      desc: "Stainless steel / Black / Graphite / Brass / Bronze",
+      title: "Alternatieve grepen SKG*** Aluminium",
+      desc: "Roestvrij staal / Zwart / Grafiet / Messing / Brons",
     },
     {
-      title: "Alternative rod grips SKG***",
-      desc: "550mm / 950mm / 1100mm / 1800mm Stainless steel",
+      title: "Alternatieve stanggreep SKG***",
+      desc: "550mm / 950mm / 1100mm / 1800mm Roestvrij staal",
     },
     {
-      title: "Brochure Door handles",
+      title: "Brochure Deurgrepen",
       isBrochure: true,
       href: "/assets/docs/LivIng-Variant-1.pdf",
     },
@@ -85,31 +90,33 @@ export const doorsHandleData = {
     "/assets/images/productPage/fittings.png",
   ],
 };
+
 export const doorFittings = {
-  sectionTitle: "Door Fittings",
+  sectionTitle: "Deurbeslag",
   descriptionData: [
     {
-      title: "Fair Three-point lock SKG***",
-      desc: "Fair Three-point lock SKG*** Autolock",
+      title: "Fair Driepuntsluiting SKG***",
+      desc: "Fair Driepuntsluiting SKG*** Autolock",
     },
     {
-      title: "Cylinder for door",
-      desc: "Incl. 3 x keys",
+      title: "Cilinder voor deur",
+      desc: "Incl. 3 sleutels",
     },
     {
-      title: "Order your door",
-      desc: "Inwards & Outwards",
+      title: "Bestel uw deur",
+      desc: "Naar binnen & Naar buiten draaiend",
     },
     {
-      title: "Order your door with",
-      desc: "Inside & Outside handles",
+      title: "Bestel uw deur met",
+      desc: "Binnen- & Buitengrepen",
     },
   ],
   sliderImages: [
-    "/assets/images/productPage/handle.png",
     "/assets/images/productPage/fittings.png",
+    "/assets/images/productPage/handle.png",
   ],
 };
+
 export const hingesData = {
   sectionTitle: "Hinges",
   descriptionData: [
@@ -143,5 +150,44 @@ export const thresholdsData = {
   sliderImages: [
     "/assets/images/productPage/handle.png",
     "/assets/images/productPage/fittings.png",
+  ],
+};
+export const doorsData = {
+  sectionTitle: "Deuren",
+  descriptionData: [
+    {
+      title: "Standaard Deurbeslag",
+      desc: "Handgreep 2018 Aluminium + SKG*** Veiligheidsbeslag",
+    },
+    {
+      title: "Voor- en Achterdeur Opties",
+      desc: "Verkrijgbaar in Aluminium, Zwart, Roestvrij Staal",
+    },
+    {
+      title: "Deurtypes",
+      desc: "Draai-Deuren, Openslaande Deuren, Schuifdeuren",
+    },
+    {
+      title: "Brochure: Deursystemen",
+      isBrochure: true,
+      href: "/assets/docs/Door-Brochure.pdf",
+    },
+  ],
+  sliderImages: [
+    "/assets/images/productPage/door/1.png",
+    "/assets/images/productPage/door/2.png",
+    "/assets/images/productPage/door/3.png",
+    "/assets/images/productPage/door/4.png",
+    "/assets/images/productPage/door/5.png",
+    "/assets/images/productPage/door/6.png",
+    "/assets/images/productPage/door/7.png",
+    "/assets/images/productPage/door/8.png",
+    "/assets/images/productPage/door/9.png",
+
+    "/assets/images/productPage/door/11.png",
+    "/assets/images/productPage/door/12.jpeg",
+    "/assets/images/productPage/door/13.jpeg",
+    "/assets/images/productPage/door/14.jpeg",
+    "/assets/images/productPage/door/15.jpeg",
   ],
 };

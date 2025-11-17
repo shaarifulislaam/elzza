@@ -2,6 +2,7 @@ import { Roboto } from "next/font/google";
 import "./../styles/sass/app.scss";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Script from "next/script";
+import WhatsappButton from "@/components/commonElement/WhatsappButton";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -20,7 +21,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body className={roboto?.variable} suppressHydrationWarning>
-        <LayoutWrapper>{children}</LayoutWrapper>
+        <LayoutWrapper>
+          {children}
+          <WhatsappButton />
+        </LayoutWrapper>
         <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"

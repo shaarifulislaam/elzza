@@ -17,8 +17,6 @@ const SlidingDoorsPage = () => {
         image={heroImg.img}
       />
 
-      <ProductVision />
-
       <VideoSection />
 
       <CommonProductDesc
@@ -31,24 +29,24 @@ const SlidingDoorsPage = () => {
       <CommonProductDesc
         leftImg={false}
         image={false}
-        descriptionData={doorFittings.descriptionData}
-        productDescTitle={doorFittings.sectionTitle}
-        sliderImages={doorFittings.sliderImages}
+        descriptionData={cornerData.descriptionData}
+        productDescTitle={cornerData.sectionTitle}
+        sliderImages={cornerData.sliderImages}
       />
 
       <CommonProductDesc
         leftImg={true}
         image={true}
-        descriptionData={hingesData.descriptionData}
-        productDescTitle={hingesData.sectionTitle}
-        sliderImages={hingesData.sliderImages}
+        descriptionData={colorData.descriptionData}
+        productDescTitle={colorData.sectionTitle}
+        sliderImages={colorData.sliderImages}
       />
       <CommonProductDesc
         leftImg={false}
         image={false}
-        descriptionData={thresholdsData.descriptionData}
-        productDescTitle={thresholdsData.sectionTitle}
-        sliderImages={thresholdsData.sliderImages}
+        descriptionData={windowHardwareData.descriptionData}
+        productDescTitle={windowHardwareData.sectionTitle}
+        sliderImages={windowHardwareData.sliderImages}
       />
       <ReviewSection />
       <Blogs />
@@ -61,25 +59,77 @@ export const doorsHandleData = {
   sectionTitle: "Deurgrepen",
   descriptionData: [
     {
-      title: "Front door fittings Standard",
-      desc: "Pusher 740 SKG*** + Handle 2018 Aluminium",
+      title: "Voordeurbeslag Standaard",
+      desc: "Pusher 740 SKG*** + Greep 2018 Aluminium",
     },
     {
-      title: "Rear door fittings Standard",
-      desc: "Handle 2018 SKG*** + Handle 2018 Aluminium",
+      title: "Achterdeurbeslag Standaard",
+      desc: "Greep 2018 SKG*** + Greep 2018 Aluminium",
     },
     {
-      title: "Alternative grips SKG*** Aluminium",
-      desc: "Stainless steel / Black / Graphite / Brass / Bronze",
+      title: "Alternatieve grepen SKG*** Aluminium",
+      desc: "Roestvrij staal / Zwart / Grafiet / Messing / Brons",
     },
     {
-      title: "Alternative rod grips SKG***",
-      desc: "550mm / 950mm / 1100mm / 1800mm Stainless steel",
+      title: "Alternatieve stanggreep SKG***",
+      desc: "550mm / 950mm / 1100mm / 1800mm Roestvrij staal",
     },
     {
-      title: "Brochure Door handles",
+      title: "Brochure Deurgrepen",
       isBrochure: true,
       href: "/assets/docs/LivIng-Variant-1.pdf",
+    },
+  ],
+  sliderImages: [
+    "/assets/images/productPage/handle.png",
+    "/assets/images/productPage/fittings.png",
+  ],
+};
+export const cornerData = {
+  sectionTitle: "Hoekverbindingen",
+  descriptionData: [
+    {
+      title: "90° Hoekverbinding Buiten- & Binnenzijde",
+      desc: "",
+    },
+    {
+      title: "90° Hoekverbinding Buiten & 45° Binnen",
+      desc: "",
+    },
+    {
+      title: "45° Hoekverbinding Buiten- & Binnenzijde",
+      desc: "",
+    },
+  ],
+  sliderImages: [
+    "/assets/images/productPage/framePage/corner.jpg",
+    "/assets/images/productPage/framePage/corner.jpg",
+  ],
+};
+export const colorData = {
+  sectionTitle: "Kleuren",
+  descriptionData: [
+    {
+      title: "Profielen zonder Houtnerf – Wit & Créme",
+      desc: "",
+    },
+    {
+      title: "Profielen met Houtnerf",
+      desc: "",
+    },
+    {
+      title: "Profielen met Automotive Finish",
+      desc: "",
+    },
+    {
+      title: "Brochure Schüco Houtnerf",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
+    },
+    {
+      title: "Brochure Schüco Automotive Finish ",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
     },
   ],
   sliderImages: [
@@ -112,38 +162,20 @@ export const doorFittings = {
     "/assets/images/productPage/fittings.png",
   ],
 };
-export const hingesData = {
-  sectionTitle: "Hinges",
+export const windowHardwareData = {
+  sectionTitle: "Raambeslag",
   descriptionData: [
     {
-      title: "Seelis Surface mounted hinges SKG***",
-      desc: "White / Cream / Aluminum color frame",
+      title: "ROTO NT SKG**",
+      desc: "BlackVoorzien van Zomer & Winterstand Zichtbare scharnieren",
+    },
+    {
+      title: "ROTO NT Designo SKG**",
+      desc: "Voorzien van Zomer & Winterstand Onzichtbare scharnieren",
     },
   ],
   sliderImages: [
-    "/assets/images/productPage/handle.png",
-    "/assets/images/productPage/fittings.png",
-  ],
-};
-export const thresholdsData = {
-  sectionTitle: "Thresholds",
-  descriptionData: [
-    {
-      title: "Grounded/Low Aluminium Threshold",
-      desc: "Black",
-    },
-    {
-      title: "Elevated Threshold",
-      desc: "Black / Aluminum",
-    },
-    {
-      title: "Brochure: Aluminium Threshold",
-      isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
-    },
-  ],
-  sliderImages: [
-    "/assets/images/productPage/handle.png",
-    "/assets/images/productPage/fittings.png",
+    "/assets/images/productPage/framePage/windowFitting1.jpg",
+    "/assets/images/productPage/framePage/windowFitting2.jpg",
   ],
 };

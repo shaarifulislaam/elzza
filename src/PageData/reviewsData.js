@@ -1,17 +1,17 @@
 export const reviewsData = [
   {
     id: 1,
-    review: "M Soetekouw",
-    desc: "“Elzza heeft fantastisch werk geleverd bij het vervangen van onze ramen en deuren. Uitstekende kwaliteit, vlotte installatie en geweldige communicatie gedurende het hele proces.”",
+    review: "Henry Balan",
+    desc: "“We hebben onze vloer-tot-plafondramen vervangen door een grote schuifdeur.Alles verliep heel soepel.Hoogwaardig materiaal en het werk is uitstekend uitgevoerd.",
     image: "/assets/images/Homepage/reviews/review1.png",
     reviewCount: 5,
   },
   {
     id: 2,
-    review: "Rik rijser",
-    desc: "“Uitstekende kwaliteit en vakmanschap! De installatie was snel en netjes, en het resultaat overtrof onze verwachtingen.”",
+    review: "Edmond Ajeti",
+    desc: "“Service top en de beste kwaliteit deuren en kozijnen. Bedankt voor jullie super service”",
     image: "/assets/images/Homepage/reviews/review2.png",
-    reviewCount: 4,
+    reviewCount: 5,
   },
   {
     id: 3,
@@ -22,10 +22,10 @@ export const reviewsData = [
   },
   {
     id: 4,
-    review: "K.R.V Bala ",
-    desc: "“Onze nieuwe schuifdeuren zijn prachtig! Ze openen moeiteloos en hebben de uitstraling van onze woonkamer volledig veranderd.”",
+    review: "Sreejit menon ",
+    desc: "“Agron heeft me geholpen met het vervangen van de deuren en ramen van mijn huis. Met HR++ drievoudig glas is de energie-efficiëntie sterk verbeterd. Zijn service is een van de beste in Nederland en de prijs is zeer concurrerend.”",
     image: "/assets/images/Homepage/reviews/review4.png",
-    reviewCount: 4,
+    reviewCount: 5,
   },
   {
     id: 5,

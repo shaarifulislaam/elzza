@@ -9,9 +9,9 @@ const GalleryTab = () => {
     "Alle",
     "Ramen",
     "Deuren",
-    "Residentieel",
+    // "Residentieel",
     "Schuifsystemen",
-    "Commercieel",
+    // "Commercieel",
   ];
 
   const galleryImages = {
@@ -163,7 +163,7 @@ const GalleryTab = () => {
             {galleryImages[activeTab].map((item) => (
               <div key={item.id} className="gallery-item">
                 <img src={item.image} alt={item.title} />
-                <div className="gallery-overlay">
+                {/* <div className="gallery-overlay">
                   <div className="name">
                     Projectnaam: Moderne Woning aan het Meer
                   </div>
@@ -174,7 +174,7 @@ const GalleryTab = () => {
                     brengen panoramisch uitzicht en natuurlijk licht in dit
                     moderne toevluchtsoord.
                   </div>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

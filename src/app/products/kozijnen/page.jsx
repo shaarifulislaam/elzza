@@ -12,12 +12,10 @@ const FramesPages = () => {
   return (
     <>
       <ProductHero
-        title="Deurkozijnen"
+        title="Raamkozünen"
         subTitle="Wij helpen u graag!"
         image={heroImg.img}
       />
-
-      <ProductVision />
 
       <CommonProductDesc
         leftImg={false}

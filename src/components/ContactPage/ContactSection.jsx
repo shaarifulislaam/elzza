@@ -96,11 +96,11 @@ const ContactSection = () => {
 
             <div className="map-wrapper">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.123456789!2d4.8952!3d52.3702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDIyJzEyLjciTiA0wrA1Myc0Mi43IkU!5e0!3m2!1sen!2snl!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.927075296612!2d4.9965387!3d52.516658799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c601c22fec83f9%3A0x85ae15551df1c38c!2sElzza%20Kozijnen!5e0!3m2!1sen!2sbd!4v1763398930971!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen
+                allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
