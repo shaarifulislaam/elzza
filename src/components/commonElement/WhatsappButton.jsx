@@ -9,7 +9,7 @@ export default function WhatsAppButton() {
   const phoneNumber = "8801647540047"; // Example: '8801234567890' for Bangladesh
 
   // Pre-filled message (optional)
-  const defaultMessage = "Hello! I would like to get in touch with you.";
+  const defaultMessage = "Hallo! Ik wil graag contact met u opnemen.";
 
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -39,7 +39,7 @@ export default function WhatsAppButton() {
 
           {/* Tooltip */}
           <span className="whatsapp-button__tooltip">
-            Chat with us on WhatsApp
+            Chat met ons op WhatsApp
           </span>
 
           {/* Pulse animation */}
@@ -62,9 +62,9 @@ export default function WhatsAppButton() {
                 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
               </svg>
               <div>
-                <h3 className="whatsapp-popup__title">Chat with us</h3>
+                <h3 className="whatsapp-popup__title">Chat met ons</h3>
                 <p className="whatsapp-popup__subtitle">
-                  Typically replies instantly
+                  Antwoordt doorgaans onmiddellijk
                 </p>
               </div>
             </div>
@@ -77,13 +77,13 @@ export default function WhatsAppButton() {
           </div>
           <div className="whatsapp-popup__body">
             <p className="whatsapp-popup__message">
-              Hi there! 👋 How can we help you today?
+              Hallo! 👋 Hoe kunnen we u vandaag helpen?
             </p>
             <button
               onClick={handleWhatsAppClick}
               className="whatsapp-popup__start-btn"
             >
-              Start Chat
+              Chat starten
             </button>
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function WhatsAppButton() {
 
       {/* Toggle for popup version */}
       <button onClick={() => setIsOpen(!isOpen)} className="whatsapp-toggle">
-        {isOpen ? "Hide" : "Show"} Popup
+        {isOpen ? "Hide" : "Show"} Pop-up
       </button>
     </>
   );
