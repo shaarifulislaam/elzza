@@ -42,9 +42,9 @@ const DoorPage = () => {
       <CommonProductDesc
         leftImg={true}
         image={false}
-        descriptionData={thresholdsData.descriptionData}
-        productDescTitle={thresholdsData.sectionTitle}
-        sliderImages={thresholdsData.sliderImages}
+        descriptionData={sillsData.descriptionData}
+        productDescTitle={sillsData.sectionTitle}
+        sliderImages={sillsData.sliderImages}
       />
       <CommonProductDesc
         leftImg={false}
@@ -118,38 +118,44 @@ export const doorFittings = {
 };
 
 export const hingesData = {
-  sectionTitle: "Hinges",
+  sectionTitle: "Scharnieren",
   descriptionData: [
     {
-      title: "Seelis Surface mounted hinges SKG***",
-      desc: "White / Cream / Aluminum color frame",
+      title: "Schüco Opbouw Scharnieren SKG**",
+      desc: "Wit / Créme / Aluminium / Kleur Kozijn",
     },
   ],
   sliderImages: [
-    "/assets/images/productPage/handle.png",
-    "/assets/images/productPage/fittings.png",
+    "/assets/images/productPage/framePage/hings1.jpg",
+    "/assets/images/productPage/framePage/hings2.jpg",
   ],
 };
-export const thresholdsData = {
-  sectionTitle: "Thresholds",
+
+export const sillsData = {
+  sectionTitle: "Onderdorpels",
   descriptionData: [
     {
-      title: "Grounded/Low Aluminium Threshold",
-      desc: "Black",
+      title: "Grundmeijer Aluminium Onderdorpel",
+      desc: "Zwart",
     },
     {
-      title: "Elevated Threshold",
-      desc: "Black / Aluminum",
+      title: "Bluestone Onderdorpel",
+      desc: "Zwart / Blauwsteen",
     },
     {
-      title: "Brochure: Aluminium Threshold",
+      title: "Brochure Bluestone Onderdorpel",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
+    },
+    {
+      title: "Brochure Grundmeyer ",
       isBrochure: true,
       href: "/assets/docs/Threshold-Brochure.pdf",
     },
   ],
   sliderImages: [
-    "/assets/images/productPage/handle.png",
-    "/assets/images/productPage/fittings.png",
+    "/assets/images/productPage/framePage/sills1.jpg",
+    "/assets/images/productPage/framePage/sills2.jpg",
   ],
 };
 export const doorsData = {

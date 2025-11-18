@@ -423,7 +423,12 @@ Top Bar Section
         .menu-item {
           border-top: 1px solid rgba(255, 255, 255, 0.24);
           padding-block: 12px;
-
+          .common-btn-container {
+            .btn {
+              width: 100%;
+              padding-block: 10px;
+            }
+          }
           .menu-link {
             font-size: 16px;
             color: $white2;
@@ -506,7 +511,7 @@ Top Bar Section
                     width: 24px;
                     height: 24px;
                     object-fit: contain;
-                    filter: brightness(0) invert(1);
+                    // filter: brightness(0) invert(1);
                   }
                 }
 
@@ -1057,7 +1062,6 @@ Top Bar Section
     }
   }
 }
-// components/WhatsAppButton.scss
 
 // Main Button Container
 .whatsapp-button {
