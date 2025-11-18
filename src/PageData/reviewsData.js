@@ -31,7 +31,7 @@ export const reviewsData = [
     id: 5,
     review: "Adnan Kazan ",
     desc: "“Uitstekende ervaring met Elzza Kozijnen – voor de tweede keer!Dit is de tweede keer dat we bij Elzza Kozijnen hebben besteld, eerst voor ons oude huis en nu voor ons nieuwe huis. En opnieuw zijn we uiterst tevreden en dankbaar voor de uitstekende service en kwaliteit!”",
-    image: "/assets/images/Homepage/reviews/review3.png",
+    image: "/assets/images/Homepage/reviews/review5.png",
     reviewCount: 5,
   },
 ];
