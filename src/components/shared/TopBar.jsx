@@ -40,7 +40,12 @@ const TopBar = () => {
               />
             </svg>
           </span>
-          <span className="text-block">Eigen productie</span>
+          <span className="text-block">
+            Eigen productie
+            <span>
+              <img src="/assets/images/footer-logo.png" alt="Elzza Logo" />
+            </span>
+          </span>
         </div>
       </div>
     </>

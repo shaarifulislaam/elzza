@@ -1,6 +1,7 @@
 import Blogs from "@/components/HomePage/Blogs";
 import ReviewSection from "@/components/HomePage/ReviewSection";
 import CommonProductDesc from "@/components/ProductPage/CommonProductDesc";
+import Doors from "@/components/ProductPage/Doors";
 import ProductHero from "@/components/ProductPage/ProductHero";
 import ProductVision from "@/components/ProductPage/ProductVision";
 import React from "react";
@@ -46,13 +47,14 @@ const DoorPage = () => {
         productDescTitle={sillsData.sectionTitle}
         sliderImages={sillsData.sliderImages}
       />
-      <CommonProductDesc
+      {/* <CommonProductDesc
         leftImg={false}
         image={false}
         descriptionData={doorsData.descriptionData}
         productDescTitle={doorsData.sectionTitle}
         sliderImages={doorsData.sliderImages}
-      />
+      /> */}
+      <Doors />
       <ReviewSection />
       <Blogs />
     </>

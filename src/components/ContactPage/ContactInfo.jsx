@@ -42,7 +42,7 @@ const ContactInfo = () => {
       title: "Telefoon",
       description:
         "Wij zijn bereikbaar van maandag tot en met vrijdag van 9.00 tot 17.00 uur.",
-      contact: "+31 (22) 222 222",
+      contact: "0752102002",
     },
     {
       icon: (

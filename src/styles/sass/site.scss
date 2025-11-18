@@ -97,6 +97,11 @@ Top Bar Section
       font-family: Roboto;
       font-size: 16px;
       line-height: 1.2;
+      img {
+        width: 100%;
+        max-width: 25px;
+        margin-left: 8px;
+      }
     }
   }
 }
