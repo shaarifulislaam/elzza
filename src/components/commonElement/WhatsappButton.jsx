@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   // Replace with your actual WhatsApp number (include country code, no + or spaces)
-  const phoneNumber = "1234567890"; // Example: '8801234567890' for Bangladesh
+  const phoneNumber = "8801647540047"; // Example: '8801234567890' for Bangladesh
 
   // Pre-filled message (optional)
   const defaultMessage = "Hello! I would like to get in touch with you.";
