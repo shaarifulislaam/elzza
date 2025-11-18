@@ -15,6 +15,6 @@ export default Doors;
 export const doorImages = {
   sliderImages: [
     "/assets/images/productPage/door_hero.png",
-    "/assets/images/productPage/door_hero.png",
+    "/assets/images/productPage/frame_hero.png",
   ],
 };
