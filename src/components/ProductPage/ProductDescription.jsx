@@ -2,10 +2,11 @@ import Link from "next/link";
 import React from "react";
 import CommonBtn from "../commonElement/CommonBtn";
 
-const ProductDescription = ({ listItem, productDescTitle }) => {
+const ProductDescription = ({ listItem, productDescTitle, productDesc }) => {
   return (
     <div className="product-description-block">
       <div className="name">{productDescTitle}</div>
+      {productDesc && <div className="pr-desc">{productDesc}</div>}
       <ul className="desc-list">
         {listItem?.map((item, index) =>
           !item.isBrochure ? (

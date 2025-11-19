@@ -22,9 +22,10 @@ const SlidingDoorsPage = () => {
       <CommonProductDesc
         leftImg={true}
         image={false}
-        descriptionData={doorsHandleData.descriptionData}
-        productDescTitle={doorsHandleData.sectionTitle}
-        sliderImages={doorsHandleData.sliderImages}
+        descriptionData={slideData.descriptionData}
+        productDescTitle={slideData.sectionTitle}
+        productDesc={slideData.sectionDesc}
+        sliderImages={slideData.sliderImages}
       />
       <CommonProductDesc
         leftImg={false}
@@ -55,34 +56,36 @@ const SlidingDoorsPage = () => {
 };
 
 export default SlidingDoorsPage;
-export const doorsHandleData = {
-  sectionTitle: "Deurgrepen",
+export const slideData = {
+  sectionTitle: "Schüco Slide",
+  sectionDesc: "Hefschuifdeur met Slank Aangezicht en Lage Dorpel",
   descriptionData: [
     {
-      title: "Voordeurbeslag Standaard",
-      desc: "Pusher 740 SKG*** + Greep 2018 Aluminium",
-    },
-    {
-      title: "Achterdeurbeslag Standaard",
-      desc: "Greep 2018 SKG*** + Greep 2018 Aluminium",
-    },
-    {
-      title: "Alternatieve grepen SKG*** Aluminium",
-      desc: "Roestvrij staal / Zwart / Grafiet / Messing / Brons",
-    },
-    {
-      title: "Alternatieve stanggreep SKG***",
-      desc: "550mm / 950mm / 1100mm / 1800mm Roestvrij staal",
-    },
-    {
-      title: "Brochure Deurgrepen",
+      title: "Brochure Schüco LivIng Slide",
       isBrochure: true,
-      href: "/assets/docs/LivIng-Variant-1.pdf",
+      href: "/assets/docs/Threshold-Brochure.pdf",
+    },
+    {
+      title: "Brochure Schüco Living Slide Profielsysteem",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
+    },
+    {
+      title: "Onderhoudsvoorschriften",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
+    },
+    {
+      title: "Onderhoudsvoorschriften 2 ",
+      isBrochure: true,
+      href: "/assets/docs/Threshold-Brochure.pdf",
     },
   ],
   sliderImages: [
-    "/assets/images/productPage/handle.png",
-    "/assets/images/productPage/fittings.png",
+    "/assets/images/productPage/slide/1.jpg",
+    "/assets/images/productPage/slide/2.jpg",
+    "/assets/images/productPage/slide/3.jpg",
+    "/assets/images/productPage/slide/4.jpg",
   ],
 };
 export const cornerData = {
@@ -102,8 +105,8 @@ export const cornerData = {
     },
   ],
   sliderImages: [
-    "/assets/images/productPage/framePage/corner.jpg",
-    "/assets/images/productPage/framePage/corner.jpg",
+    "/assets/images/productPage/11.jpg",
+    "/assets/images/productPage/22.jpg",
   ],
 };
 export const colorData = {

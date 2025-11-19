@@ -7,6 +7,7 @@ const CommonProductDesc = ({
   descriptionData,
   sliderImages,
   productDescTitle,
+  productDesc,
   image,
 }) => {
   return (
@@ -22,6 +23,7 @@ const CommonProductDesc = ({
           <ProductDescription
             listItem={descriptionData}
             productDescTitle={productDescTitle}
+            productDesc={productDesc}
           />
           <ProductSlider productImages={sliderImages} image={image} />
         </div>

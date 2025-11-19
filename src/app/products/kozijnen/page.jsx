@@ -85,8 +85,8 @@ export const cornerData = {
     },
   ],
   sliderImages: [
-    "/assets/images/productPage/framePage/corner.jpg",
-    "/assets/images/productPage/framePage/corner.jpg",
+    "/assets/images/productPage/11.jpg",
+    "/assets/images/productPage/22.jpg",
   ],
 };
 export const colorData = {
