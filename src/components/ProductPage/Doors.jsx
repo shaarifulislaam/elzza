@@ -13,8 +13,5 @@ const Doors = () => {
 
 export default Doors;
 export const doorImages = {
-  sliderImages: [
-    "/assets/images/productPage/door_hero.png",
-    "/assets/images/productPage/frame_hero.png",
-  ],
+  sliderImages: ["/assets/images/productPage/door3.png"],
 };
