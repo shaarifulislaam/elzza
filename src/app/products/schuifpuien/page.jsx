@@ -57,7 +57,7 @@ const SlidingDoorsPage = () => {
 
 export default SlidingDoorsPage;
 export const slideData = {
-  sectionTitle: "Schüco Slide",
+  sectionTitle: "Schüco leven Slide",
   sectionDesc: "Hefschuifdeur met Slank Aangezicht en Lage Dorpel",
   descriptionData: [
     {

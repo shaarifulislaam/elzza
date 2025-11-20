@@ -12,7 +12,7 @@ const AboutPage = () => {
   return (
     <>
       <AboutHero />
-      <AboutStats />
+      {/* <AboutStats /> */}
       <OurStory />
       <ServicesSection />
       <WhyElzza />

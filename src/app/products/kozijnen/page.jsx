@@ -47,7 +47,7 @@ const FramesPages = () => {
         productDescTitle={windowHardwareData.sectionTitle}
         sliderImages={windowHardwareData.sliderImages}
       />
-      <CommonProductDesc
+      {/* <CommonProductDesc
         leftImg={false}
         image={false}
         descriptionData={hingesData.descriptionData}
@@ -60,7 +60,7 @@ const FramesPages = () => {
         descriptionData={sillsData.descriptionData}
         productDescTitle={sillsData.sectionTitle}
         sliderImages={sillsData.sliderImages}
-      />
+      /> */}
       <ReviewSection />
       <Blogs />
     </>
