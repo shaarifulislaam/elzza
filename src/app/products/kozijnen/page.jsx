@@ -7,7 +7,7 @@ import VideoSection from "@/components/ProductPage/VideoSection";
 import React from "react";
 
 const FramesPages = () => {
-  const heroImg = { img: "/assets/images/productPage/frame_hero.png" };
+  const heroImg = { img: "/assets/images/placeholder.svg" };
 
   return (
     <>
@@ -107,12 +107,12 @@ export const colorData = {
     {
       title: "Brochure Schüco Houtnerf",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/slider/Brochure-Schuco-Houtnerf.pdf",
     },
     {
       title: "Brochure Schüco Automotive Finish ",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/slider/schueco_automotivefinish_p4370.pdf",
     },
   ],
   sliderImages: [

@@ -63,22 +63,22 @@ export const slideData = {
     {
       title: "Brochure Schüco LivIng Slide",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/slider/Brochure-Schuco-LivIng-Slide.pdf",
     },
     {
       title: "Brochure Schüco Living Slide Profielsysteem",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/slider/Brochure-Schuco-Living-Slide-Profielsysteem.pdf",
     },
     {
       title: "Onderhoudsvoorschriften",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/slider/Onderhoudsvoorschriften-Schuco.pdf",
     },
     {
       title: "Onderhoudsvoorschriften 2 ",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/slider/Onderhoudsvoorschriften-Schuco-Verkort.pdf",
     },
   ],
   sliderImages: [
@@ -127,12 +127,12 @@ export const colorData = {
     {
       title: "Brochure Schüco Houtnerf",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/slider/Brochure-Schuco-Houtnerf.pdf",
     },
     {
       title: "Brochure Schüco Automotive Finish ",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/slider/schueco_automotivefinish_p4370.pdf",
     },
   ],
   sliderImages: [
