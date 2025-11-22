@@ -107,12 +107,12 @@ export const colorData = {
     {
       title: "Brochure Schüco Houtnerf",
       isBrochure: true,
-      href: "/assets/docs/productPage/slider/Brochure-Schuco-Houtnerf.pdf",
+      href: "/assets/docs/productPage/sliding/Brochure-Schuco-Houtnerf.pdf",
     },
     {
       title: "Brochure Schüco Automotive Finish ",
       isBrochure: true,
-      href: "/assets/docs/productPage/slider/schueco_automotivefinish_p4370.pdf",
+      href: "/assets/docs/productPage/sliding/schueco_automotivefinish_p4370.pdf",
     },
   ],
   sliderImages: [
@@ -146,12 +146,12 @@ export const handlesData = {
     {
       title: "Brochure Hoppe Secustik Raamgreep",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/sliding/Brochure-Hoppe-Secustik.pdf",
     },
     {
       title: "Brochure Geze OL90",
       isBrochure: true,
-      href: "/assets/docs/Threshold-Brochure.pdf",
+      href: "/assets/docs/productPage/sliding/Brochure-Geze-OL90.pdf",
     },
   ],
   sliderImages: [

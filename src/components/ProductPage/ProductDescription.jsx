@@ -53,6 +53,8 @@ const ProductDescription = ({ listItem, productDescTitle, productDesc }) => {
                 download
                 target="_blank"
                 rel="noopener noreferrer"
+                title={item.label}
+                aria-label={item.label}
               >
                 <span>
                   <svg

@@ -84,7 +84,7 @@ export const doorsHandleData = {
     {
       title: "Brochure Deurgrepen",
       isBrochure: true,
-      href: "/assets/docs/productPage/slider/BOWIDO-BROCHURE-VOORDEURBESLAG.pdf",
+      href: "/assets/docs/productPage/sliding/BOWIDO-BROCHURE-VOORDEURBESLAG.pdf",
     },
   ],
   sliderImages: [
@@ -147,12 +147,12 @@ export const sillsData = {
     {
       title: "Brochure Bluestone Onderdorpel",
       isBrochure: true,
-      href: "/assets/docs/productPage/slider/Brochure-Bluestone.pdf",
+      href: "/assets/docs/productPage/sliding/Brochure-Bluestone.pdf",
     },
     {
       title: "Brochure Grundmeyer ",
       isBrochure: true,
-      href: "/assets/docs/productPage/slider/Brochure-Grundmeyer.pdf",
+      href: "/assets/docs/productPage/sliding/Brochure-Grundmeyer.pdf",
     },
   ],
   sliderImages: [
