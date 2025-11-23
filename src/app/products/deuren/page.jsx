@@ -128,7 +128,7 @@ export const hingesData = {
     },
   ],
   sliderImages: [
-    "/assets/images/productPage/framePage/hings1.jpg",
+    "/assets/images/productPage/framePage/hings3.png",
     "/assets/images/productPage/framePage/hings2.jpg",
   ],
 };
@@ -137,23 +137,23 @@ export const sillsData = {
   sectionTitle: "Onderdorpels",
   descriptionData: [
     {
-      title: "Grundmeijer Aluminium Onderdorpel",
+      title: "BUVA onderdorpel",
       desc: "Zwart",
     },
     {
       title: "Bluestone Onderdorpel",
       desc: "Zwart / Blauwsteen",
     },
-    {
-      title: "Brochure Bluestone Onderdorpel",
-      isBrochure: true,
-      href: "/assets/docs/productPage/sliding/Brochure-Bluestone.pdf",
-    },
-    {
-      title: "Brochure Grundmeyer ",
-      isBrochure: true,
-      href: "/assets/docs/productPage/sliding/Brochure-Grundmeyer.pdf",
-    },
+    // {
+    //   title: "Brochure Bluestone Onderdorpel",
+    //   isBrochure: true,
+    //   href: "/assets/docs/productPage/sliding/Brochure-Bluestone.pdf",
+    // },
+    // {
+    //   title: "Brochure Grundmeyer ",
+    //   isBrochure: true,
+    //   href: "/assets/docs/productPage/sliding/Brochure-Grundmeyer.pdf",
+    // },
   ],
   sliderImages: [
     "/assets/images/productPage/framePage/sills1.jpg",

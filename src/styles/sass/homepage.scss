@@ -1693,32 +1693,82 @@ Vision Section
         margin-bottom: 18px;
       }
     }
+  }
+  .docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    border-radius: 12px;
+    border: 1px solid #b7cbf3;
+    background: #e8eefb;
+    margin-top: 20px;
+    padding-inline: 40px;
+    padding-block: 30px;
 
-    .card-docs {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-
-      .doc-row {
-        display: flex;
-      }
-
-      .doc-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px;
-        border-radius: 4px;
-        background: #fff;
-        padding: 8px 6px;
-        color: var(--Foundation-Blue-blue-500, #1857d8);
-        font-size: 15px;
-
-        line-height: 1.6; /* 160% */
-        text-decoration: none;
-        cursor: pointer;
-      }
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding: 0;
     }
+  }
+
+  .doc-card {
+    border-radius: 12px;
+
+    @media (max-width: 768px) {
+      padding-inline: 20px;
+    }
+  }
+
+  .card-header {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e8f0fe;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+  }
+
+  .docs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .doc-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    border: 1px solid #e0e0e0;
+  }
+
+  .doc-icon {
+    flex-shrink: 0;
+    color: #0066cc;
+    transition: color 0.2s ease;
+  }
+
+  .doc-label {
+    flex: 1;
+
+    color: #001149;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Typeface-Line-Height-text-lg, 28px); /* 175% */
   }
 }
 @media (max-width: 1600px) {

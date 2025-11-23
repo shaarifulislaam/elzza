@@ -8,6 +8,7 @@ export const sliderData = [
   { id: 12, path: "/assets/images/Homepage/c6.png" },
   { id: 13, path: "/assets/images/Homepage/c7.png" },
   { id: 133, path: "/assets/images/Homepage/c8.png" },
+  { id: 134, path: "/assets/images/Homepage/c9.png" },
   { id: 14, path: "/assets/images/Homepage/c1.png" },
 
   // { id: 17, path: "/assets/images/Homepage/c2.png" },
@@ -17,6 +18,7 @@ export const sliderData = [
   { id: 22, path: "/assets/images/Homepage/c6.png" },
   { id: 23, path: "/assets/images/Homepage/c7.png" },
   { id: 232, path: "/assets/images/Homepage/c8.png" },
+  { id: 332, path: "/assets/images/Homepage/c9.png" },
   { id: 24, path: "/assets/images/Homepage/c1.png" },
 
   // { id: 25, path: "/assets/images/Homepage/c2.png" },

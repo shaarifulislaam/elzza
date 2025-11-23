@@ -12,7 +12,7 @@ const FramesPages = () => {
   return (
     <>
       <ProductHero
-        title="Raamkozünen"
+        title="Raamkozijnen"
         subTitle="Wij helpen u graag!"
         image={heroImg.img}
       />
@@ -194,7 +194,7 @@ export const sillsData = {
   sectionTitle: "Onderdorpels",
   descriptionData: [
     {
-      title: "Grundmeijer Aluminium Onderdorpel",
+      title: "BUVA onderdorpel",
       desc: "Zwart",
     },
     {
