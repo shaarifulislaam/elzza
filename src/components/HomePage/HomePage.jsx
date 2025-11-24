@@ -9,6 +9,7 @@ import ReviewSection from "./ReviewSection";
 import WhyChoose from "./WhyChoose";
 import VisionSection from "./VisionSection";
 import Blogs from "./Blogs";
+import InstagramGallery from "./InstagramGallery";
 
 const HomePage = () => {
   return (
@@ -21,7 +22,7 @@ const HomePage = () => {
       <GallerySection />
       {/* <ProjectsSection /> */}
       <VisionSection />
-      <ReviewSection />
+      <InstagramGallery />
       <Blogs />
     </>
   );

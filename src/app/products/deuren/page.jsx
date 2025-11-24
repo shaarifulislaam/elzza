@@ -1,4 +1,5 @@
 import Blogs from "@/components/HomePage/Blogs";
+import InstagramGallery from "@/components/HomePage/InstagramGallery";
 import ReviewSection from "@/components/HomePage/ReviewSection";
 import CommonProductDesc from "@/components/ProductPage/CommonProductDesc";
 import Doors from "@/components/ProductPage/Doors";
@@ -55,7 +56,7 @@ const DoorPage = () => {
         sliderImages={doorsData.sliderImages}
       /> */}
       <Doors />
-      <ReviewSection />
+      <InstagramGallery />
       <Blogs />
     </>
   );

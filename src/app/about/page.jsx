@@ -4,6 +4,7 @@ import OurStory from "@/components/AboutPage/OurStory";
 import WhyElzza from "@/components/AboutPage/WhyElzza";
 import Blogs from "@/components/HomePage/Blogs";
 import GallerySection from "@/components/HomePage/GallerySection";
+import InstagramGallery from "@/components/HomePage/InstagramGallery";
 import ReviewSection from "@/components/HomePage/ReviewSection";
 import ServicesSection from "@/components/HomePage/ServicesSection";
 import React from "react";
@@ -16,7 +17,7 @@ const AboutPage = () => {
       <OurStory />
       <ServicesSection />
       <WhyElzza />
-      <ReviewSection />
+      <InstagramGallery />
       <GallerySection />
       <Blogs />
     </>

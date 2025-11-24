@@ -1,4 +1,5 @@
 import Blogs from "@/components/HomePage/Blogs";
+import InstagramGallery from "@/components/HomePage/InstagramGallery";
 import ReviewSection from "@/components/HomePage/ReviewSection";
 import CommonProductDesc from "@/components/ProductPage/CommonProductDesc";
 import ProductHero from "@/components/ProductPage/ProductHero";
@@ -49,7 +50,7 @@ const SlidingDoorsPage = () => {
         productDescTitle={windowHardwareData.sectionTitle}
         sliderImages={windowHardwareData.sliderImages}
       />
-      <ReviewSection />
+      <InstagramGallery />
       <Blogs />
     </>
   );
