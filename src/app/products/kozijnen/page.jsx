@@ -186,10 +186,7 @@ export const hingesData = {
       desc: "Wit / Créme / Aluminium / Kleur Kozijn",
     },
   ],
-  sliderImages: [
-    "/assets/images/productPage/framePage/hings1.jpg",
-    "/assets/images/productPage/framePage/hings2.jpg",
-  ],
+  sliderImages: ["/assets/images/productPage/framePage/hings3.jpg"],
 };
 export const sillsData = {
   sectionTitle: "Onderdorpels",
