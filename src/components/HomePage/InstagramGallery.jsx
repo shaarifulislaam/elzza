@@ -13,36 +13,36 @@ const InstagramGallery = () => {
   const demoData = [
     {
       id: "1",
-      caption: "Beautiful sunset at the beach 🌅",
+      caption:
+        "Neem geen genoegen met standaardbeveiliging.Elke Elzza deur en elk raam is uitgerust met ons meerpuntssluitsysteem, speciaal ontworpen om jou en je gezin veilig te houden. 🏡🔒Gemoedsrust is onbetaalbaar. Klik op de link in bio en ontdek hoe wij veiligheid standaard maken.",
       media_type: "IMAGE",
-      media_url:
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
-      permalink: "https://instagram.com/p/demo1",
-      timestamp: "2024-11-20T10:00:00Z",
-      like_count: 1234,
-      comments_count: 56,
+      media_url: "/assets/images/instagram-1.jpg",
+      permalink: "https://www.instagram.com/p/DRVMXLxE-8Q/",
+      timestamp: "2025-11-22T10:00:00Z",
+      like_count: 123,
+      comments_count: 5,
     },
     {
       id: "2",
-      caption: "Morning coffee vibes ☕",
+      caption:
+        "Weer een tevreden klant! De ingangdeur en de kozijnen aan de voorzijde zijn vervangen en voorzien van HR+++ VSG-glas. Geleverd en gemonteerd volgens de hoogste kwaliteitsstandaard #schueco #ijsselstein",
       media_type: "IMAGE",
-      media_url:
-        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800",
-      permalink: "https://instagram.com/p/demo2",
-      timestamp: "2024-11-19T08:30:00Z",
+      media_url: "/assets/images/instagram-2.jpg",
+      permalink: "https://www.instagram.com/p/DRPdwl5CFz3/",
+      timestamp: "2025-11-21T08:30:00Z",
       like_count: 987,
       comments_count: 34,
     },
     {
       id: "3",
-      caption: "City lights at night 🌃",
+      caption:
+        "Het is meer dan alleen glas, het is het element dat de uitstraling van je woning bepaalt. ✨Voel jij je aangetrokken tot het gedurfde contrast van modern zwart of kies je voor de tijdloze elegantie van klassiek wit?Laat ons jouw favoriet weten in de reacties! 👇",
       media_type: "IMAGE",
-      media_url:
-        "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800",
-      permalink: "https://instagram.com/p/demo3",
-      timestamp: "2024-11-18T20:15:00Z",
-      like_count: 2345,
-      comments_count: 89,
+      media_url: "/assets/images/instagram-3.jpg",
+      permalink: "https://www.instagram.com/p/DROU4tfDVMC/",
+      timestamp: "2025-11-19T20:15:00Z",
+      like_count: 234,
+      comments_count: 0,
     },
     {
       id: "4",
