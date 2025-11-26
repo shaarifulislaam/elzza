@@ -8,7 +8,7 @@ import VideoSection from "@/components/ProductPage/VideoSection";
 import React from "react";
 
 const FramesPages = () => {
-  const heroImg = { img: "/assets/images/placeholder.svg" };
+  const heroImg = { img: "/assets/images/productPage/window_hero.png" };
 
   return (
     <>
